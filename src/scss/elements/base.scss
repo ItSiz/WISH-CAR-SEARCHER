@@ -1,0 +1,18 @@
+@import "../settings/colors.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background:#242323
+  }
+  body {
+  
+    @media only screen and (min-width: 600px) {
+      width: 50%;
+    }
+   
+    @media only screen and (min-width: 1200px) {
+      width: 33.333%;
+    }
+  }

@@ -5,7 +5,7 @@ const Example = () => {
     return (
         <div className="example">
             <div className="example__button">
-                Lorem ipsum
+                Lorem ipsum dei gloriam
             </div>
         </div>
     );

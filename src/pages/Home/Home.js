@@ -11,9 +11,10 @@ const Home = () => {
                 <Col sm>1 of 3</Col>
                 <Col sm xs={6}>
                     It's home page with example component
-                    <Example/>
+                    
                 </Col>
-                <Col sm>3 of 3</Col>
+                <Col sm>3 of 3
+                <Example/></Col>
             </Row>
         </Container>
     );

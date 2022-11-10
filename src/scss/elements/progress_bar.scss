@@ -1,0 +1,109 @@
+@import "../settings/colors.scss";
+@import "../settings/fonts.scss";
+
+// @mixin pagination-size($padding-y, $padding-x, $font-size, $border-radius) {
+//     .page-link {
+//       padding: $padding-y $padding-x;
+//       @include font-size($font-size);
+//     }
+  
+//     .page-item {
+//       @if $pagination-margin-start == (-$pagination-border-width) {
+//         &:first-child {
+//           .page-link {
+//             border-radius: 50%;
+//             // @include border-start-radius($border-radius);
+//           }
+//         }
+  
+//         &:last-child {
+//           .page-link {
+//             border-radius: 50%;
+//             // @include border-end-radius($border-radius);
+//           }
+//         }
+//       } @else {
+//         //Add border-radius to all pageLinks in case they have left margin
+//         .page-link {
+//             border-radius: 50%
+//         //   @include border-radius($border-radius);
+//         }
+//       }
+//     }
+//   }
+
+.pagination-border-radius-sm {
+    border-radius: 50%;
+
+}
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .page-item {
+
+        &:first-of-type {
+            display: none;
+        }
+        &:last-of-type {
+            display: none;
+        }
+        .page-link {
+            background: $color-not-active;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            border: none;
+            margin: 5px;
+
+            &:focus {
+                background: $color-primary;
+            }
+
+            &:active {
+                background: $color-primary;
+            }
+            
+            &:hover {
+                background: $color-primary;
+            }
+    
+        }
+
+
+    }
+}
+
+
+//     box-sizing: border-box;
+//   }
+  
+//   .container {
+//     position: relative;  
+//     width: 100%;
+//     margin: 50px;
+//   }
+  
+//   .pagination {
+//       position: absolute;
+//       left: 0;
+      
+//       &:nth-child(2) { left: 30px; }
+//       &:nth-child(3) { left: 60px; }
+//       &:nth-child(4) { left: 90px; }
+//   }
+  
+//   .circle {
+//     position: absolute;
+//     left: 0;
+//     width: 20px;
+//     height: 20px;  
+//     border: 2px solid #777;
+//     border-radius: 100%;
+//   }
+  
+//   .active {
+//     background: #777;
+//   }

@@ -1,0 +1,13 @@
+{
+    "cars": [
+      {
+        "id": 1,
+        "name": "Eniaq IV",
+        "brand": "Skoda",
+        "engine": {
+          "type": "petrol",
+          "hp": 562
+        }
+      }
+    ]
+}

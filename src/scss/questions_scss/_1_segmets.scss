@@ -1,0 +1,146 @@
+@import "../settings/colors.scss";
+@import "../settings/fonts.scss";
+
+* {
+    font-family: $font-Righteous;
+}
+
+.segemnts-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+
+    .segemnts-question {
+        background: $color-not-active;
+        margin: 15px 15px 0px 15px;
+        border-radius: 15px;
+        border: none;
+        height: 40px;
+
+        .question-space-segments {
+            display: flex;
+            background: none;
+            align-items: center;
+            padding: 0 40px;
+            // justify-content: space-around;
+
+            img {
+                position: absolute;
+                background: none;
+            }
+            p {
+                position: absolute;
+                margin-left: 60px;
+                background: none;
+                font-size: 20px;
+                color: #000000;
+                ;
+            }
+        }
+
+        &:hover {
+            background-color: $text-full-light;
+        }
+
+        &:active {
+            background-color: $color-primary;
+        }
+    }
+    & p {
+        display: flex;
+        justify-content: center;
+        color: $text-full-light;
+        margin: 0;
+    }
+
+    .class-a {
+        img {
+            height: 35px;
+        }
+    }
+    .class-b {
+        img {
+            width: 39px;
+            height: 42px;
+        }
+    }
+    .class-c {
+        img {
+            width: 41px;
+            height: 39px;
+        }
+    }
+
+    .class-d {
+        img {
+            width: 45px;
+            height: 48px;
+        }
+    }
+    .class-e {
+        img {
+            width: 47px;
+            height: 49px;
+        }
+    }
+    .class-f {
+        img {
+            width: 45px;
+            height: 49px;
+        }
+    }
+}
+
+.questions-bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+    .buttons-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .next-buton {
+            background: $color-primary;
+            box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
+            border: none;
+            border-radius: 15px;
+            width: 150px;
+            font-size: 20px;
+            margin: 0 35px 0 35px;
+
+            &:hover {
+                background: $text-full-light;
+            }
+        }
+
+        .next-icon {
+            border: none;
+            // & img {
+            // width: 32px;
+
+            // &:hover {
+            //     color: $color-primary;            }
+            // }
+
+            .fa-solid {
+                font-size: 30px;
+                color: $color-not-active;
+                
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+
+            .fa-x {
+                font-size: 29px;
+            }
+        }
+    }
+}
+
+.questions-progress {
+    background: red;
+}
