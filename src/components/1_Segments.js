@@ -3,8 +3,11 @@ import React, { useState, useEffect, Fragment } from 'react';
 import { Link } from "react-router-dom";
 import "../scss/questions_scss/_1_segmets.scss";
 import ProgressBar from './Progress_bar';
+// import BodyType from './components/2_Body_Type';
+// import Menu from './components/Menu';
+import App from '../App';
 
-const Segments = () => {
+const Segments = ({setCurrentComponent}) => {
     return (
     <>
         <section className='menu-top menu-segments'>
@@ -63,19 +66,15 @@ const Segments = () => {
 
         <section className='questions-bottom'>
             <div className='buttons-section'>
-                <button className='next-icon'>
-                {/* <img src='https://thenounproject.com/api/private/icons/1920781/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23737373&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjap1IE9w640qm8S4cA3GrLafobVGtckVdOQ6GxWZqy39a61Ehsl1v7_49SKdjY3kLm8a4cv1VeB2LZbbnywOBknCdTQ%3D%3D'/> */}
-                    <i class="fa-solid fa-arrow-left"></i>
+                <button className='next-icon' onClick={() => setCurrentComponent(1)}>
+                    <i className="fa-solid fa-arrow-left" data-bs-toggle="popover" title="Previous page" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                 </button>
-                <button className='next-buton'>
+                <button className='next-buton' onClick={() => setCurrentComponent(3)}>
                     next
                 </button>
-                <button className='next-icon'>
-                {/* <img src='https://thenounproject.com/api/private/icons/1890803/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23737373&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjap1IE9w640qm8S4cA3GrLafobVGtckVdOQ6GxWZqy39a61Ehsl1v7_49SKdjY3kLm8a4cv1VeB2LZbbnywOBknCdTQ%3D%3D'/> */}
-                    <i class="fa-solid fa-x"></i>
+                <button className='next-icon' onClick={() => setCurrentComponent(1)}>
+                    <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                 </button>
-                {/* <img src='https://thenounproject.com/api/private/icons/1920781/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23737373&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjapjsK0Tdbm7mx1jy4-yoDfy-f0OTUhdr6YTwhciQvSGvAfjg6KljwdnvBhtH0ndjoAmngucuvbAXrmKePyiueNkytA%3D%3D'/> */}
-                {/* <button type="button" className="btn-close btn-close-white" aria-label="Close"></button> */}
             </div>
         </section>
 

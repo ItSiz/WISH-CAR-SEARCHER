@@ -17,18 +17,18 @@ const ProgressBar = () => {
 
 return (
         <nav aria-label="...">
-            <ul class="pagination pagination-sm">
-                <li class="page-item active" aria-current="page">
-                    <span class="page-link"></span>
+            <ul className="pagination pagination-sm">
+                <li className="page-item active" aria-current="page">
+                    <span className="page-link"></span>
                 </li>
-                <li class="page-item active"><a class="page-link active" href="#"></a></li>
-                <li class="page-item"><a class="page-link" href="#"></a></li>
-                <li class="page-item"><a class="page-link" href="#"></a></li>
-                <li class="page-item"><a class="page-link" href="#"></a></li>
-                <li class="page-item"><a class="page-link" href="#"></a></li>
-                <li class="page-item"><a class="page-link" href="#"></a></li>
-                <li class="page-item"><a class="page-link" href="#"></a></li>
-                <li class="page-item"><a class="page-link" href="#"></a></li>
+                <li className="page-item active"><a className="page-link active" href="#"></a></li>
+                <li className="page-item"><a className="page-link" href="#"></a></li>
+                <li className="page-item"><a className="page-link" href="#"></a></li>
+                <li className="page-item"><a className="page-link" href="#"></a></li>
+                <li className="page-item"><a className="page-link" href="#"></a></li>
+                <li className="page-item"><a className="page-link" href="#"></a></li>
+                <li className="page-item"><a className="page-link" href="#"></a></li>
+                <li className="page-item"><a className="page-link" href="#"></a></li>
             </ul>
         </nav>
 

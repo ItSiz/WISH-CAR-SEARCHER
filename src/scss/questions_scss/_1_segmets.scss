@@ -16,6 +16,7 @@
         border-radius: 15px;
         border: none;
         height: 40px;
+        border: 1px solid $border-black;
 
         .question-space-segments {
             display: flex;
@@ -118,6 +119,7 @@
 
         .next-icon {
             border: none;
+            background: none;
             // & img {
             // width: 32px;
 
@@ -139,8 +141,4 @@
             }
         }
     }
-}
-
-.questions-progress {
-    background: red;
 }

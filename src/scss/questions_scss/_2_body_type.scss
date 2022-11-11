@@ -20,6 +20,7 @@
             height: 100px;
             border-radius: 15px;
             background: $color-not-active;
+            border: 1px solid $border-black;
 
             &:hover {
                 background: $text-full-light;

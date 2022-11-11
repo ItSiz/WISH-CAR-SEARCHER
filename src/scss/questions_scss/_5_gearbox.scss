@@ -5,17 +5,17 @@
     font-family: $font-Righteous;
 }
 
-.fuel-body {
-    margin: 0 15px;
+.gearbox-body {
+    margin: 0 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    .fuel-questions {
+    .gearbox-questions {
         background: $color-not-active;
         border: 1px solid $border-black;
         border-radius: 15px;
-        margin-top: 10px;
+        margin-top: 25px;
 
         &:hover {
             background: $text-full-light;
@@ -25,14 +25,14 @@
             background: $color-primary;
         }
 
-        .question-space-fuel {
+        .question-space-gearbox {
             display: flex;
             padding: 8px;
             align-items: center;
 
             p {
                 margin: 0 20px;
-                font-size: 20px;
+                font-size: 25px;
             }
 
             img {
@@ -40,22 +40,5 @@
                 border-radius: 5px;
             }
         }
-    }
-
-}
-
-
-
-
-
-
-
-////////////////////////////////////////////////
-.questions-progress {
-    .page-item {
-        .page-link:nth-child(n+2) {
-            background: $color-not-active;
-        }
-       
     }
 }

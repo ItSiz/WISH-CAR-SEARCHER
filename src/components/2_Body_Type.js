@@ -3,7 +3,7 @@ import React, { useState, useEffect, Fragment } from 'react';
 import "../scss/questions_scss/_2_body_type.scss";
 import ProgressBar from './Progress_bar';
 
-const BodyType = () => {
+const BodyType = ({setCurrentComponent}) => {
     return (
         <>
             <section className='menu-top menu-segments'>
@@ -66,14 +66,14 @@ const BodyType = () => {
 
             <section className='questions-bottom'>
                 <div className='buttons-section'>
-                    <button className='next-icon'>
-                        <i class="fa-solid fa-arrow-left"></i>
+                    <button className='next-icon' onClick={() => setCurrentComponent(2)}>
+                        <i className="fa-solid fa-arrow-left" data-bs-toggle="popover" title="Previous page" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                     </button>
-                    <button className='next-buton'>
+                    <button className='next-buton' onClick={() => setCurrentComponent(4)}>
                         next
                     </button>
-                    <button className='next-icon'>
-                        <i class="fa-solid fa-x"></i>
+                    <button className='next-icon' onClick={() => setCurrentComponent(1)}>
+                        <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                     </button>
                 </div>
             </section>

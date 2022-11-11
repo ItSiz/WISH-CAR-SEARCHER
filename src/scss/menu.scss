@@ -1,6 +1,10 @@
 @import "./settings/colors.scss";
 @import "./settings/fonts.scss";
 
+* {
+    font-family: $font-Righteous;
+}
+
 .menu-top {
     display:flex;
     justify-content: center;
@@ -24,12 +28,13 @@
             height: 40px;
             position: relative;
             z-index: 1;
-            top: 50px;
+            top: 45px;
             background: none;
         }
         .car-photo {
             position: relative;
             top: -40px;
+            z-index: 2;
 
             .carousel-indicators {
                 // display: none;
@@ -325,4 +330,9 @@
         justify-content: center;
 
     }
+}
+
+
+.questions-body {
+    height: 520px;
 }
