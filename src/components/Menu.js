@@ -17,12 +17,12 @@ const Menu = ({setCurrentComponent}) => {
         </section>
 
         <section className='menu-todays-car'>
-            <div className='car-presentation'> 
-                <img className='brand-logo' src='https://upload.wikimedia.org/wikipedia/de/1/1c/Skoda_Logo.svg'/>
-                <div className='car-photo'>
+            {/* <div className='car-presentation'>  */}
+                {/* <img className='brand-logo' src='https://upload.wikimedia.org/wikipedia/de/1/1c/Skoda_Logo.svg'/>
+                <div className='car-photo'> */}
                     <CarOusel/>
-                </div>
-            </div>
+                {/* </div> */}
+            {/* </div> */}
             <div className='parameters-box'>
                 {/* <div className='white-box'/> */}
                 <div className='car-title'>
@@ -87,6 +87,7 @@ const Menu = ({setCurrentComponent}) => {
             <button className='searching-start-button' onClick={() => setCurrentComponent(2)}>START</button>
             {/* <img className='wish-car-logo'/> */}
             <h1>WISH CAR SEARCHER</h1>
+            <p>Paweł karpiński 2021</p>
         </section>
     </>
     )

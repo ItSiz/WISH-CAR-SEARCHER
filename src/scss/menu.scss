@@ -9,11 +9,12 @@
     display:flex;
     justify-content: center;
     align-items: center;
-        height: 90px;
-            color: $text-dark;
-                background: $color-primary;
-                font-family: $font-Righteous;
-                font-size: 25px;
+    height: 90px;
+    color: $text-dark;
+                // background: $color-primary;
+    background-image: url(../../public/icons/wish_backg.png);
+    font-family: $font-Righteous;
+    font-size: 25px;
 }
 
 .menu-todays-car {
@@ -21,6 +22,8 @@
     flex-direction: column; 
     justify-content: center;
     box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
+    position: relative;
+    top: -20px;
 
     .car-presentation {
         .brand-logo {
@@ -220,7 +223,7 @@
 .menu-nav {
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: -30px 15px 0 15px;
 
 
     .nav-button {
@@ -306,7 +309,8 @@
         border-radius: 15px;
         color: $text-full-light;
         font-family: $font-Righteous;
-        background: $color-primary;
+        // background: $color-primary;
+        background-image: url(../../public/icons/wish_backg.png);
         display: flex;
         box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
         margin-bottom: 20px;
@@ -335,4 +339,17 @@
 
 .questions-body {
     height: 520px;
+}
+
+.pagination {
+    display: flex;
+
+    .page-item {
+        background: $text-full-light;
+        width: 18px;
+        height: 18px;
+        margin: 0 6px;
+        border-radius: 50%;
+    }
+    
 }

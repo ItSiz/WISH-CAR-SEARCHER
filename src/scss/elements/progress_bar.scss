@@ -44,38 +44,38 @@
     justify-content: center;
     
 
-    .page-item {
+    // .page-item {
 
-        &:first-of-type {
-            display: none;
-        }
-        &:last-of-type {
-            display: none;
-        }
-        .page-link {
-            background: $color-not-active;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            border: none;
-            margin: 5px;
+    //     &:first-of-type {
+    //         display: none;
+    //     }
+    //     &:last-of-type {
+    //         display: none;
+    //     }
+    //     .page-link {
+    //         background: $color-not-active;
+    //         border-radius: 50%;
+    //         width: 20px;
+    //         height: 20px;
+    //         border: none;
+    //         margin: 5px;
 
-            &:focus {
-                background: $color-primary;
-            }
+    //         &:focus {
+    //             background: $color-primary;
+    //         }
 
-            &:active {
-                background: $color-primary;
-            }
+    //         &:active {
+    //             background: $color-primary;
+    //         }
             
-            &:hover {
-                background: $color-primary;
-            }
+    //         &:hover {
+    //             background: $color-primary;
+    //         }
     
-        }
+    //     }
 
 
-    }
+    // }
 }
 
 

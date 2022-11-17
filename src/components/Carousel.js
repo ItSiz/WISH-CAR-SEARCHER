@@ -3,11 +3,15 @@ import "../scss/elements/carousel.scss";
 
 function CarOusel() {
   return (
+    <>
+    <img className='brand-logo' src='./brands/skoda_logo.png'/>
+    <div className='car-photo'>
     <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://iprenders.blob.core.windows.net/base5azs23100905/2X2X.Z9hLdiHPbBTVo-qdMnEIaU9SJBtvQO-_xmeFU6V0sSh2fZLcvDqJPjt-vsdE_XacgVLC3SQlI1FptmNj85K-AEC-688387dayvext_front1080.png"
+          // src="https://iprenders.blob.core.windows.net/base5azs23100905/2X2X.Z9hLdiHPbBTVo-qdMnEIaU9SJBtvQO-_xmeFU6V0sSh2fZLcvDqJPjt-vsdE_XacgVLC3SQlI1FptmNj85K-AEC-688387dayvext_front1080.png"
+          src='./skoda/Superb_sedan_front.png'
           alt="Front view"
         />
         {/* <Carousel.Caption>
@@ -18,7 +22,8 @@ function CarOusel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://iprenders.blob.core.windows.net/base5azs23100905/2X2X.Z9hLdiHPbBTVo-qdMnEIaU9SJBtvQO-_xmeFU6V0sSh2fZLcvDqJPjt-vsdE_XacgVLC3SQlI1FptmNj85K-AEC-688387dayvext_side1080.png"
+          // src="https://iprenders.blob.core.windows.net/base5azs23100905/2X2X.Z9hLdiHPbBTVo-qdMnEIaU9SJBtvQO-_xmeFU6V0sSh2fZLcvDqJPjt-vsdE_XacgVLC3SQlI1FptmNj85K-AEC-688387dayvext_side1080.png"
+          src='./skoda/Superb_sedan_side.png'
           alt="Side view"
         />
 
@@ -30,7 +35,7 @@ function CarOusel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://iprenders.blob.core.windows.net/base5azs23100905/2X2X.Z9hLdiHPbBTVo-qdMnEIaU9SJBtvQO-_xmeFU6V0sSh2fZLcvDqJPjt-vsdE_XacgVLC3SQlI1FptmNj85K-AEC-688387dayvext_rear1080.png"
+          src="./skoda/Superb_sedan_back.png"
           alt="Back view"
         />
 
@@ -42,6 +47,8 @@ function CarOusel() {
         </Carousel.Caption> */}
       </Carousel.Item>
     </Carousel>
+    </div>
+    </>
   );
 }
 

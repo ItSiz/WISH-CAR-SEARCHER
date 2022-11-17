@@ -1,7 +1,7 @@
 import { Button } from 'bootstrap';
 import React, { useState, useEffect, Fragment } from 'react';
 import "../scss/questions_scss/_5_gearbox.scss";
-import ProgressBar from './Progress_bar';
+// import ProgressBar from './Progress_bar';
 
 // const DataCatcher = () => {
 //     const [gearboxinfo, setGearboxInfo] = useState({gearbox: []});
@@ -40,7 +40,7 @@ import ProgressBar from './Progress_bar';
 
 
 const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
-
+    const [carGearbox, setCarGearbox] = useState("");
     // const button = document.getElementsByClassName('gearbox-questions');
 
     // button.addEventListener("click", klik);
@@ -60,19 +60,19 @@ const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
                 <input type="button">
                 </input> */}
                 {/* <input type="button"value="manual" onChange={handleChange}> */}
-                    <button type='submit' className='body-questions gearbox-questions' >
+                    <button type='submit' className='body-questions gearbox-questions' onClick={() => setCarGearbox("manual")}>
                         <div className='question-space-gearbox manualG'>
                             <img src='https://cdn-icons-png.flaticon.com/512/3011/3011864.png' alt='manual gearbox icon'/>
                             <p>manual</p>
                         </div>
                     </button>
-                    <button type='submit' className='body-questions gearbox-questions' >
+                    <button type='submit' className='body-questions gearbox-questions' onClick={() => setCarGearbox("automatic")}>
                         <div className='question-space-gearbox automatG'>
                             <img src='https://cdn-icons-png.flaticon.com/512/635/635700.png' alt='automatic gearbox icon'/>
                             <p>automatic</p>
                         </div>
                     </button>
-                    <button type='submit' className='body-questions gearbox-questions' >
+                    <button type='submit' className='body-questions gearbox-questions' onClick={() => setCarGearbox("any")}>
                         <div className='question-space-gearbox snyG'>
                             <img src='https://cdn-icons-png.flaticon.com/512/3082/3082942.png' alt='any type of gearbox icon'/>
                             <p>any type</p>
@@ -96,8 +96,16 @@ const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
                 </div>
             </section>
 
-            <section className='questions-progress'>
-                <ProgressBar/>
+            <section className='questions-progress gearbox-progress'>
+                <ul className="pagination">
+                    <li className="page-item"></li>
+                    <li className="page-item"></li>
+                    <li className="page-item"></li>
+                    <li className="page-item"></li>
+                    <li className="page-item"></li>
+                    <li className="page-item"></li>
+                    <li className="page-item"></li>
+                </ul>
             </section>
         </>
     )

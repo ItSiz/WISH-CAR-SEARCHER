@@ -4,3 +4,137 @@
 * {
     font-family: $font-Righteous;
 }
+.questions-body {
+    position: relative;
+}
+
+.power-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.slider {
+    margin: 15 30;
+}
+
+
+.highlow {
+    margin-top: 20px;
+}
+
+
+.slider-center {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    position: relative;
+    bottom: 250px;
+    z-index: -1;
+
+        .circle {
+            background-color: $color-not-active;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 0 15px;
+        }
+
+        .pitson {
+        position: relative;
+        bottom: 220px;
+        width: 200px;
+        }
+}
+
+.power-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: 400px;
+    .counter-value{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: $text-full-light;
+            font-size: 24px;
+            margin: 0;
+        }
+        .counter-box {
+            background: $text-full-light;
+            border: 1px solid $border-black;
+            padding: 10px;
+            width: 130px;
+            height: 90px;
+            border-radius: 17px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                font-size: 24px;
+            }
+            .km-value {
+                color: $color-secondary;
+            }
+            .kWh-value {
+                color: $background-main-color;
+            }
+        }
+    }
+}
+
+.power-progress {
+    .page-item:nth-of-type(1) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(2) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(3) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(4) {
+        background: $color-primary;
+    }
+}
+
+
+
+// .slider {
+//     --round-slider-low-handle-color: red;
+//     --round-slider-high-handle-color: rebe;
+//     color: rebeccapurple;
+
+//     .handle {
+//         stroke-width: 40
+//     }
+
+// }
+
+// .slider-center {
+//     position: relative;
+//     bottom: 350px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//     align-items: center;
+
+//     .circle {
+//         background-color: $color-not-active;
+//         width: 360px;
+//         height: 360px;
+//         border-radius: 50%;
+//     }
+
+//     .pitson {
+//         position: relative;
+//         bottom: 310px;
+
+//     }
+// }

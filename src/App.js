@@ -7,8 +7,11 @@ import Fuel from './components/3_Fuel';
 import Power from './components/4_Power';
 import Gearbox from './components/5_Gearbox';
 import Budget from './components/6_Budget';
+import Results from './components/7_Results';
 import React, { useState, useEffect, Fragment } from 'react';
 // import { Routes, Route, Link } from "react-router-dom";
+import { RoundSlider } from '@thomasloven/round-slider';
+
 
 const App = () => {
 
@@ -37,19 +40,24 @@ const App = () => {
     else if (currentComponent === 7) {
       setComponentToDisplay(<Budget setCurrentComponent={setCurrentComponent}/>);
     }
+    else if (currentComponent === 8) {
+      setComponentToDisplay(<Results setCurrentComponent={setCurrentComponent}/>);
+    }
   }, [currentComponent]);
 
 
   return (
     <>
       {componentToDisplay}
-      {/* <Menu/>
-      <Segments/>
-      <BodyType/>
-      <Fuel/>
-      <Power/>
-      <Gearbox/>
-      <Budget/> */}
+      {/* <Menu/> */}
+      {/* <Segments/> */}
+      {/* <BodyType/> */}
+      {/* <Fuel/> */}
+      {/* <Power/> */}
+      {/* <Gearbox/> */}
+      {/* <Budget/> */}
+      {/* <Results/> */}
+      {/* <RoundSlider/> */}
       </>
 
   )

@@ -1,0 +1,89 @@
+@import "../settings/colors.scss";
+@import "../settings/fonts.scss";
+
+* {
+    font-family: $font-Righteous;
+	color: $text-full-light;
+}
+
+.budget-body {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+	.budget-slider {
+		position: absolute;
+		right: 0;
+	}
+
+	.budget-indicators {
+		display: flex;
+		position: absolute;
+		right: 280px;
+		flex-direction: column-reverse;
+		height: 460px;
+		justify-content: space-between;
+		margin-top: 20px;
+
+		p:nth-of-type(1) {
+			position: relative;
+			left: 100px;
+		}
+		p:nth-of-type(2) {
+			position: relative;
+			left: 30px;
+		}
+		p:nth-of-type(4) {
+			position: relative;
+			left: 30px;
+		}
+		p:nth-of-type(5) {
+			position: relative;
+			left: 100px;
+		}
+	}
+	.quote-counter {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		align-content: flex-start;
+		position: absolute;
+		z-index: 2;
+		margin-top: 20px;
+		right: 25px;
+		height: 300px;
+		justify-content: space-around;
+		min-width: 150px;
+
+		h2 {
+			font-size: 20px;
+			margin: 0;
+		}
+		h1 {
+			font-size: 35px;
+			margin: 0;
+			color: $color-primary;
+		}
+	}
+}
+
+.budget-progress {
+    .page-item:nth-of-type(1) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(2) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(3) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(4) {
+        background: $color-not-active;
+    }
+	.page-item:nth-of-type(5) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(6) {
+        background: $color-primary;
+    }
+}

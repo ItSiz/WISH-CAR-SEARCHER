@@ -42,3 +42,21 @@
         }
     }
 }
+
+.gearbox-progress {
+    .page-item:nth-of-type(1) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(2) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(3) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(4) {
+        background: $color-not-active;
+    }
+    .page-item:nth-of-type(5) {
+        background: $color-primary;
+    }
+}

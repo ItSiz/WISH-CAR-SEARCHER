@@ -5,9 +5,300 @@
         "name": "Eniaq IV",
         "brand": "Skoda",
         "engine": {
+          "type": "electric",
+          "hp min": 58,
+          "hp max": 77,
+          "unit": "kWh",
+          "capacity min": null,
+          "capacity max": null,
+          "max range": 541,
+          "gearbox": ["automatic"],
+          "speed": "6.9s"
+        },
+        "segment": "D",
+        "body": "suv",
+        "price min": 78200,
+        "price max": 116500
+      },
+      {
+        "id": 2,
+        "name": "ENYAQ COUPÉ RS IV",
+        "brand": "Skoda",
+        "engine": {
+          "type": "electric",
+          "hp min": 77,
+          "hp max": 77,
+          "unit": "kWh",
+          "capacity min": null,
+          "capacity max": null,
+          "max range": 522,
+          "gearbox": ["automatic"],
+          "speed": "6.4s"
+        },
+        "segment": "D",
+        "body": "suv",
+        "price min": 295900,
+        "price max": 318000
+      },
+      {
+        "id": 3,
+        "name": "Kamiq",
+        "brand": "Skoda",
+        "engine": {
           "type": "petrol",
-          "hp": 562
-        }
+          "hp min": 562,
+          "hp max": 120,
+          "unit": "hp",
+          "capacity min": 1.0,
+          "capacity max": 1.5,
+          "max range":null,
+          "gearbox": ["manual"],
+          "speed":  "215km/h"
+        },
+        "body": "suv",
+        "segment": "B",
+        "price min":78200,
+        "price max": 116500
+      },
+      {
+        "id": 4,
+        "name": "Wrangler",
+        "brand": "Jeep",
+        "engine": {
+          "type": ["hybrid"],
+          "hp min": 381,
+          "hp max": 381,
+          "unit": "km" ,
+          "capacity min": 2.0,
+          "capacity max": 2.0,
+          "max range":null,
+          "gearbox": ["manual","automatic"],
+          "speed": "6,4s"
+        },
+        "segment": "D",
+        "body": "off-road",
+        "price min": 361700,
+        "price max": 371700
+      },
+      {
+        "id": 5,
+        "name": "5 Touring",
+        "brand": "BMW",
+        "engine": {
+          "type": ["hybrid", "diesel", "petrol"],
+          "hp min":110,
+          "hp max":292,
+          "unit": "hp",
+          "capacity min": null,
+          "capacity max": null,
+          "gearbox": ["automatic"],
+          "max range": null,
+          "speed": "6,1s"
+        },
+        "segment": "E",
+        "body": "combi",
+        "price min": 245000,
+        "price max": 339500
+      },
+      {
+        "id": 6,
+        "name": "2 Active Tourer",
+        "brand": "BMW",
+        "engine": {
+          "type": ["hybrid", "diesel", "petrol"],
+          "hp min":122,
+          "hp max":326,
+          "unit": "hp",
+          "capacity min": null,
+          "capacity max": null,
+          "max range":null,
+          "gearbox": ["automatic"],
+          "speed":  "5,5s"
+        },
+        "segment": "C",
+        "body": "minivan",
+        "price min": 138000,
+        "price max": 196000
+      },
+      {
+        "id": 7,
+        "name": "iXM 60",
+        "brand": "BMW",
+        "engine": {
+          "type": ["electric"],
+          "hp min":240,
+          "hp max":455,
+          "unit": "kWh",
+          "capacity min": null,
+          "capacity max": null ,
+          "max range":561, 
+          "gearbox": ["automatic"],
+          "speed":  "3,8"
+        },
+        "segment": "F",
+        "body": "suv",
+        "price min": 378300,
+        "price max": 609000
+      },
+      {
+        "id": 8,
+        "name": "4 Cabrio",
+        "brand": "BMW",
+        "engine": {
+          "type": ["diesel", "petrol"],
+          "hp min":184,
+          "hp max":375,
+          "unit": "km",
+          "capacity min": null,
+          "capacity max": null ,
+          "max range":null,
+          "gearbox": ["automatic"],
+          "speed":  "3,7s"
+        },
+        "segment": "D",
+        "body": "cabrio",
+        "price min": 235000 ,
+        "price max": 497500
+      },
+      {
+        "id": 9,
+        "name": "Z4 sDrive20i",
+        "brand": "BMW",
+        "engine": {
+          "type": ["petrol"],
+          "hp min":197,
+          "hp max":340,
+          "unit": "km",
+          "capacity min": null,
+          "capacity max": null ,
+          "max range":null,
+          "gearbox": ["automatic", "manual"],
+          "speed":  "4,5"
+        },
+        "segment": "C",
+        "body": "cabrio",
+        "price min": 220000,
+        "price max": 325000
+      },
+      {
+        "id": 10,
+        "name": "2 Gran Coupe",
+        "brand": "BMW",
+        "engine": {
+          "type": ["petrol", "diesel" ],
+          "hp min":136,
+          "hp max":306,
+          "unit": "km",
+          "capacity min": null,
+          "capacity max": null ,
+          "max range":null,
+          "gearbox": ["automatic", "manual"],
+          "speed":  "4,9"
+        },
+        "segment": "C",
+        "body": ["coupe","sedan"],
+        "price min":  141000,
+        "price max": 235000
+      },
+      {
+        "id": 11,
+        "name": "Fabia",
+        "brand": "Skoda",
+        "engine": {
+          "type": ["petrol"],
+          "hp min":110,
+          "hp max":80,
+          "unit": "km",
+          "capacity min": 1.0,
+          "capacity max": 1.0 ,
+          "max range":null,
+          "gearbox": ["automatic", "manual"],
+          "speed":  "null"
+        },
+        "segment": "B",
+        "body": "hatchback",
+        "price min": 82500,
+        "price max": 72250
+      },
+      {
+        "id": 12,
+        "name": "Karoq",
+        "brand": "Skoda",
+        "engine": {
+          "type": ["petrol", "diesel"],
+          "hp min":150,
+          "hp max":110,
+          "unit": "km",
+          "capacity min": 2.0,
+          "capacity max": 1.0,
+          "max range":null,
+          "gearbox": ["automatic", "manual"],
+          "speed":  "8.8"
+        },
+        "segment": "C",
+        "body": "suv",
+        "price min": 154800,
+        "price max": 113100
+      },
+      {
+        "id": 13,
+        "name": "Kodiaq",
+        "brand": "Skoda",
+        "engine": {
+          "type": ["petrol", "diesel"],
+          "hp min":200,
+          "hp max":150,
+          "unit": "km",
+          "capacity min": 2.0,
+          "capacity max": 1.5,
+          "max range":null,
+          "gearbox": ["automatic"],
+          "speed":  "6.5"
+        },
+        "segment": "D",
+        "body": "suv",
+        "price min": 187450,
+        "price max": 156200
+      },
+      {
+        "id": 14,
+        "name": "Superb",
+        "brand": "Skoda",
+        "engine": {
+          "type": ["petrol", "diesel"],
+          "hp min":280,
+          "hp max":150,
+          "unit": "km",
+          "capacity min": 2.0,
+          "capacity max": 1.5,
+          "max range":null,
+          "gearbox": ["automatic", "manual"],
+          "speed":  "5.3"
+        },
+        "segment": "E",
+        "body": ["sedan", "combi"],
+        "price min": 186000,
+        "price max": 153450
+      },
+      {
+        "id": 15,
+        "name": "Octavia",
+        "brand": "Skoda",
+        "engine": {
+          "type": ["petrol", "diesel"],
+          "hp min":150,
+          "hp max":200,
+          "unit": "km",
+          "capacity min": 1.5,
+          "capacity max": 2.0,
+          "max range":null,
+          "gearbox": ["automatic", "manual"],
+          "speed": "7.0"
+        },
+        "segment": "D",
+        "body": ["sedan", "combi"],
+        "price min": 98200,
+        "price max": 177650
       }
     ]
 }
