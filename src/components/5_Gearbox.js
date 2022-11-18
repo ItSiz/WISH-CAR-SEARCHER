@@ -1,6 +1,9 @@
-import { Button } from 'bootstrap';
-import React, { useState, useEffect, Fragment } from 'react';
+// import { Button } from 'bootstrap';
+import React, { useState } from 'react';
 import "../scss/questions_scss/_5_gearbox.scss";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 // import ProgressBar from './Progress_bar';
 
 // const DataCatcher = () => {
@@ -41,6 +44,11 @@ import "../scss/questions_scss/_5_gearbox.scss";
 
 const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
     const [carGearbox, setCarGearbox] = useState("");
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     // const button = document.getElementsByClassName('gearbox-questions');
 
     // button.addEventListener("click", klik);
@@ -56,10 +64,6 @@ const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
             </section>
 
             <section className='questions-body gearbox-body'>
-{/* 
-                <input type="button">
-                </input> */}
-                {/* <input type="button"value="manual" onChange={handleChange}> */}
                     <button type='submit' className='body-questions gearbox-questions' onClick={() => setCarGearbox("manual")}>
                         <div className='question-space-gearbox manualG'>
                             <img src='https://cdn-icons-png.flaticon.com/512/3011/3011864.png' alt='manual gearbox icon'/>
@@ -78,7 +82,7 @@ const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
                             <p>any type</p>
                         </div>
                     </button>
-                {/* </input> */}
+
 
             </section>
 
@@ -90,9 +94,24 @@ const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
                     <button className='next-buton' onClick={() => setCurrentComponent(7)}>
                         next
                     </button>
-                    <button className='next-icon' onClick={() => setCurrentComponent(1)}>
-                        <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
-                    </button>
+                    <button className='next-icon' onClick={handleShow}>
+                    <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
+                </button>
+
+                <Modal
+                    show={show}
+                    onHide={handleClose}
+                    backdrop="static"
+                    keyboard={false}
+                    className='button-to-menu'>
+                    <Modal.Body className='modal-text'> 
+                        Do You want to cancel your dream car search and return to the MENU?
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button className='close-button' onClick={handleClose}> Close </Button>
+                        <Button className='exit-button' onClick={() => setCurrentComponent(1)}>Exit to Menu</Button>
+                    </Modal.Footer>
+                </Modal>
                 </div>
             </section>
 

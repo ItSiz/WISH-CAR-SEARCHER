@@ -1,24 +1,10 @@
 @import "./settings/colors.scss";
 @import "./settings/fonts.scss";
-// @import "scss/_transitions.scss";
-
-$transition-collapse: height .35s ease;
 
 * {
     font-family: $font-Righteous;
 }
 
-.menu-top {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    color: $text-dark;
-                // background: $color-primary;
-    background-image: url(../../public/icons/wish_backg.png);
-    font-family: $font-Righteous;
-    font-size: 25px;
-}
 
 .menu-todays-car {
     display: flex;
@@ -130,7 +116,6 @@ $transition-collapse: height .35s ease;
                 display: flex;
                 align-items: center;
 
-
                 .parameters-icons {
                     background: none;
                     display: flex;
@@ -156,7 +141,6 @@ $transition-collapse: height .35s ease;
 
                     .statis {
                         background: none;
-                        color: $background-main-color;
                     }
             }
             }
@@ -164,49 +148,49 @@ $transition-collapse: height .35s ease;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                background: none
-                
-                span {
+                color: $color-primary;
+                background: none;
+
+                & span {
                     background: none;
+                    font-size: 20px;
                     font-weight: 600;
                     background: none;
                 }
 
-                .car-prize {
-                    font-size: 24px;
-                    color: $color-primary;
-                }
-
                 & span:last-child {
                     font-size: 10px;
-                    color: $color-primary;
                 }
             }
         }
 
+    }
+    
+    .collapse {
+
+        &:not(.show) {
+          display: none;
+        }
+
+
+      }
+      
+    .collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height .35s ease;
+    }
+
 
 }
 
-// WHY NIE W .menu-todays-car???
+
 
 .today-footer{ 
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: -124px;
-
-    
-    // .collapse {
-    //     &:not(.show) {
-    //       display: none;
-    //     }
-    //   }
-      
-    // .collapsing {
-    // height: 0;
-    // overflow: hidden;
-    // transition: height .35s ease;
-    // }
 
     .menu-more-button {
         color: $background-main-color;
@@ -239,195 +223,5 @@ $transition-collapse: height .35s ease;
             font-weight: 300;
             font-size: 12px;
         }
-    }
 }
 
-.menu-nav {
-    display: flex;
-    flex-direction: column;
-    margin: -30px 15px 0 15px;
-
-
-    .nav-button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 15px;
-        margin: 15px 0;
-    }
-
-    .button-inside {
-        background: none;
-        display: flex;
-        align-items: center;
-
-
-        // &:hover {
-        //     color: $background-main-color;
-        // }
-        // &:active {
-        //     color: $background-main-color;
-        // }
-    }
-
-    & button {
-        border-color: $color-primary;
-        border-radius: 15px;
-        color: $text-full-light;
-        font-family: $font-Righteous;
-        background: $background-submain-color;
-        display: flex;
-        align-items: center;
-        box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
-        
-
-        &:hover {
-            background: $color-primary;
-            color: $background-main-color;
-        }
-        &:hover .fa-heart {
-            color: black;
-        }
-        &:active {
-            background: $color-primary;
-            color: $background-main-color;
-        }
-
-        & p {
-            background: none;
-            margin: 0;
-            font-size: 20px;
-            margin-left: 30px;
-        }
-
-        .fa-solid{
-            color: $color-primary;
-            font-size: 20px;
-            background: none;
-
-            &:hover {
-                color: $background-main-color;
-            }
-        }
-
-        & img {
-            width: 20px;
-            background: none;
-        }
-    }
-
-}
-
-.menu-start-searcher {
-    display: flex;
-    flex-direction: column;
-    font-family: $font-Righteous;
-    margin: 15px 15px;
-    align-items: center;
-
-    .searching-start-button {
-        display: flex;
-        justify-content: center;
-        padding: 20px 100px;
-        border-radius: 15px;
-        color: $text-full-light;
-        font-family: $font-Righteous;
-        // background: $color-primary;
-        background-image: url(../../public/icons/wish_backg.png);
-        display: flex;
-        box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
-        // margin-bottom: 20px;
-        font-size: 40px;
-        width: -webkit-fill-available;
-
-        &:hover {
-            background: $text-full-light;
-            color: $background-main-color;
-        }
-        &:active {
-            background: $color-primary;
-            color: $background-main-color;
-        }
-    }
-    
-    h1 {
-        margin-top: 10px;
-        background: none;
-        font-size: 12px;
-        color: $text-full-light;
-        display: flex;
-        justify-content: center;
-
-    }
-    p {
-        // display: flex;
-        // position: absolute;
-        // bottom: 0;
-        // right: 0;
-        font-size: 5px;
-
-    }
-}
-
-/////////////////////////////////////////////////////////////////
-.questions-body {
-    height: 520px;
-}
-/////////////////////////////////////////////////////////////////
-.pagination {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 15px;
-    padding: 0;
-    height: auto;
-
-    .page-item {
-        background: $text-full-light;
-        width: 18px;
-        height: 18px;
-        margin: 0 6px;
-        border-radius: 50%;
-    }   
-}
-
-//////////////////////////////////////////////////////////////
-.modal-dialog {
-    color: $border-black;
-    
-}
-
-.modal-content {
-    background: $color-not-active;
-    color: black;
-    
-}
-.modal-text{
-    color: $border-black;
-    font-size: 18px;
-    text-align: center;
-}
-
-.modal-footer {
-    display: flex;
-    justify-content: space-evenly;
-    border: none;
-
-    button {
-        background: $text-full-light;
-        color: $border-black;
-        border: none;
-
-        &:hover {
-            background: $background-submain-color;
-        }
-        &:last-of-type {
-            background-color: $color-secondary;
-
-            &:hover {
-                background: $background-submain-color;
-                color: $color-secondary;
-            }
-        }
-    }
-}

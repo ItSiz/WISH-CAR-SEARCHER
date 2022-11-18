@@ -18,11 +18,13 @@
         "segment": "D",
         "body": "suv",
         "price min": 78200,
-        "price max": 116500
+        "price max": 116500,
+        "photo side": ["https://iprenders.blob.core.windows.net/base5azs23100905/H6H6W9f3LeiHPbBTV-qdMADmGa8XSKBtvPO-_ymreFU6WzSi2fZLIEcvqPku-vsdE_YZcgULC4RPlI1FpumOj86K-AEC-688387dayvext_front1080.png"],
+        "photos": []
       },
       {
         "id": 2,
-        "name": "ENYAQ COUPÉ RS IV",
+        "name": "ENYAQ COUPE",
         "brand": "Skoda",
         "engine": {
           "type": "electric",

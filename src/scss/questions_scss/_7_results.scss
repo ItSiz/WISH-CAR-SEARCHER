@@ -1,0 +1,11 @@
+@import "../settings/colors.scss";
+@import "../settings/fonts.scss";
+
+* {
+    font-family: $font-Righteous;
+}
+
+.visually-hidden {
+    color: red;
+    background: red;
+}

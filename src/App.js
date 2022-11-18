@@ -1,3 +1,4 @@
+import React, { useState, useEffect, Fragment } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./scss/app.scss";
 import Menu from './components/Menu';
@@ -8,18 +9,27 @@ import Power from './components/4_Power';
 import Gearbox from './components/5_Gearbox';
 import Budget from './components/6_Budget';
 import Results from './components/7_Results';
-import React, { useState, useEffect, Fragment } from 'react';
+import Garage from './components/Garage';
+import Loading from './components/Loading';
+
 // import { Routes, Route, Link } from "react-router-dom";
-import { RoundSlider } from '@thomasloven/round-slider';
 
 
 const App = () => {
 
-  const [currentComponent, setCurrentComponent] = useState(1);
+  const [currentComponent, setCurrentComponent] = useState(0);
   const [componentToDisplay, setComponentToDisplay] = useState(<Menu setCurrentComponent={setCurrentComponent} />);
 
-  useEffect(() => {
-    if(currentComponent === 1) {
+  const timer1 = setTimeout(() => {setCurrentComponent(1);}, 1000);
+  // const timer2 = setTimeout(() => {clearTimeout(timer1);}, 1000);
+  clearTimeout(timer1)
+
+
+  useEffect((timer) => {
+    if(currentComponent === 0) {
+      setComponentToDisplay(<Loading setCurrentComponent={setCurrentComponent} />);
+    }
+    else if(currentComponent === 1) {
       setComponentToDisplay(<Menu setCurrentComponent={setCurrentComponent} />);
     }
     else if(currentComponent === 2) {
@@ -43,11 +53,18 @@ const App = () => {
     else if (currentComponent === 8) {
       setComponentToDisplay(<Results setCurrentComponent={setCurrentComponent}/>);
     }
+    // else if (currentComponent === 9) {
+    //   setComponentToDisplay(<Favourites setCurrentComponent={setCurrentComponent}/>);
+    // }
+    else if (currentComponent === 10) {
+      setComponentToDisplay(<Garage setCurrentComponent={setCurrentComponent}/>);
+    }
   }, [currentComponent]);
 
 
   return (
     <>
+      {/* <Loading/> */}
       {componentToDisplay}
       {/* <Menu/> */}
       {/* <Segments/> */}
@@ -58,6 +75,7 @@ const App = () => {
       {/* <Budget/> */}
       {/* <Results/> */}
       {/* <RoundSlider/> */}
+      {/* <Garage/> */}
       </>
 
   )

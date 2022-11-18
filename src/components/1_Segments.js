@@ -1,12 +1,19 @@
-import { Button } from 'bootstrap';
-import React, { useState, useEffect, Fragment } from 'react';
-import { Link } from "react-router-dom";
+// import { Button } from 'bootstrap';
+import React, { useState } from 'react';
+// import { Link } from "react-router-dom";
 import "../scss/questions_scss/_1_segmets.scss";
 // import ProgressBar from './Progress_bar';
-import App from '../App';
+// import App from '../App';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 const Segments = ({setCurrentComponent}) => {
     const [carSegment, setCarSegment] = useState("");
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
     <>
         <section className='menu-top menu-segments'>
@@ -70,10 +77,25 @@ const Segments = ({setCurrentComponent}) => {
                 </button>
                 <button className='next-buton' onClick={() => setCurrentComponent(3)}>
                     next
-                </button>
-                <button className='next-icon' onClick={() => setCurrentComponent(1)}>
+                </button>     
+                <button className='next-icon' onClick={handleShow}>
                     <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                 </button>
+
+                <Modal
+                    show={show}
+                    onHide={handleClose}
+                    backdrop="static"
+                    keyboard={false}
+                    className='button-to-menu'>
+                    <Modal.Body className='modal-text'> 
+                        Do You want to cancel your dream car search and return to the MENU?
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button className='close-button' onClick={handleClose}> Close </Button>
+                        <Button className='exit-button' onClick={() => setCurrentComponent(1)}>Exit to Menu</Button>
+                    </Modal.Footer>
+                </Modal>
             </div>
         </section>
 

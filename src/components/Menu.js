@@ -1,8 +1,10 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, {useState} from 'react';
+// import { Link } from "react-router-dom";
 import "../scss/menu.scss";
 import CarOusel from './Carousel';
-import App from '../App';
+import Button from 'react-bootstrap/Button';
+import Collapse from 'react-bootstrap/Collapse';
+// import App from '../App';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Username = (user) => {
@@ -10,6 +12,8 @@ const Username = (user) => {
 }
 
 const Menu = ({setCurrentComponent}) => {
+    const [open, setOpen] = useState(false);
+
     return (
     <>
         <section className='menu-top'>
@@ -36,7 +40,6 @@ const Menu = ({setCurrentComponent}) => {
                 <div className='car-data-box'>
                     <div className='box-left'>
                         <div className='parameters-icons'>
-                        {/* <i class="fa-sharp fa-solid fa-engine"></i> */}
                             <img className='engine-icon' src="https://cdn-icons-png.flaticon.com/512/5557/5557346.png"/>
                             <img className='bodytype-icon' src="https://cdn-icons-png.flaticon.com/512/55/55280.png"/>
                         </div>
@@ -53,30 +56,33 @@ const Menu = ({setCurrentComponent}) => {
                 </div>
                 <div/>
             </div>
+
+
             <div className='today-footer'>
-                <button className='menu-more-button'>More</button>
+                <button className='menu-more-button'
+                  onClick={() => setOpen(!open)}
+                  aria-controls="more-info"
+                  aria-expanded={open}> More</button>
+        <Collapse in={open}>
+            <div id="more-info">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+          labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </Collapse>
                 <p>The car of the Day</p>
             </div>
         </section>
 
         <section className='menu-nav'>
             <button className='whishlist-button nav-button'>
-                {/* <img className='whishlist-icon'/> */}
                 <div className='button-inside'>
                     <i className="fa-solid fa-heart"></i>
                     <p>Your Whishlist</p>
                 </div>
             </button>
-            <button className='whishlist-FullCarList nav-button'>
+            <button className='whishlist-FullCarList nav-button' onClick={() => setCurrentComponent(10)}>
                 <div className='button-inside'>
-                    {/* <img className='full-whish-icon'/> */}
-                    {/* <i className="fa-solid fa-circle-heart"></i> */}
-                    {/* <i className="fa-solid fa-cars"></i>
-                    <i className="fa-solid fa-car-garage"></i>
-                    <i class="fa-sharp fa-solid fa-cars"></i> */}
-                    {/* <i className="fa-solid fa-garage-open"></i>
-                    <i class="fa-duotone fa-garage-open"></i>
-                    <i class="fa-solid fa-garage-car"></i> */}
                     <img src='https://cdn-icons-png.flaticon.com/512/1295/1295093.png'/>
                     <p>Full Car List</p>
                 </div>

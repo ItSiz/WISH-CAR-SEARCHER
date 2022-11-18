@@ -1,11 +1,12 @@
-import { Button } from 'bootstrap';
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState} from 'react';
 import "../scss/questions_scss/_4_power.scss";
 // import ProgressBar from './Progress_bar';
-// import { round } from "@thomasloven/round-slider";
+import { round } from "@thomasloven/round-slider";
 // import Logo from '../../assets/Logo_car.png';
 // import Logo from '.../assets/Logo_car.png';
 // import favicon from '../../public/favicon.ico';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 const Power = ({setCurrentComponent}) => {
     const [value, setValue] = useState(0);
@@ -13,6 +14,9 @@ const Power = ({setCurrentComponent}) => {
     const [high, setHigh] = useState("");
     window.addEventListener('value-changed', (event)=>{console.log(event)});
 
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <>
@@ -79,9 +83,24 @@ const Power = ({setCurrentComponent}) => {
                     <button className='next-buton' onClick={() => setCurrentComponent(6)}>
                         next
                     </button>
-                    <button className='next-icon' onClick={() => setCurrentComponent(1)}>
-                        <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
-                    </button>
+                    <button className='next-icon' onClick={handleShow}>
+                    <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
+                </button>
+
+                <Modal
+                    show={show}
+                    onHide={handleClose}
+                    backdrop="static"
+                    keyboard={false}
+                    className='button-to-menu'>
+                    <Modal.Body className='modal-text'> 
+                        Do You want to cancel your dream car search and return to the MENU?
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button className='close-button' onClick={handleClose}> Close </Button>
+                        <Button className='exit-button' onClick={() => setCurrentComponent(1)}>Exit to Menu</Button>
+                    </Modal.Footer>
+                </Modal>
                 </div>
             </section>
 
