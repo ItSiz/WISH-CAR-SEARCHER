@@ -18,16 +18,34 @@ import Loading from './components/Loading';
 const App = () => {
 
   const [currentComponent, setCurrentComponent] = useState(0);
-  const [componentToDisplay, setComponentToDisplay] = useState(<Menu setCurrentComponent={setCurrentComponent} />);
+  const [componentToDisplay, setComponentToDisplay] = useState(<Loading setCurrentComponent={setCurrentComponent} />);
 
-  const timer1 = setTimeout(() => {setCurrentComponent(1);}, 1000);
+  // const timer1 = setTimeout(() => {setCurrentComponent(1);}, 1000);
+
+  // const timer1 = setTimeout(() => {setCurrentComponent(1);}, 100);
+  // clearTimeout(timer1);
   // const timer2 = setTimeout(() => {clearTimeout(timer1);}, 1000);
-  clearTimeout(timer1)
+  // clearTimeout(timer1)
+  // const timeReset = (timer1) => {
+  //   if (setCurrentComponent >= 1) {
+  //     clearTimeout(timer1)
+  //   }
+  // }
+ 
+//   const timeReset = () => {
+//     if (setCurrentComponent === 0) {
+//       setTimeout(() => {setCurrentComponent(1);}, 1000);
+//     } else {
+//       clearTimeout()
+//       console.log("clear")
+//     }
+//   }
+//  const timer = setTimeout(timeReset(), 10);
 
-
-  useEffect((timer) => {
+  useEffect(() => {
     if(currentComponent === 0) {
-      setComponentToDisplay(<Loading setCurrentComponent={setCurrentComponent} />);
+      setComponentToDisplay(<Loading setCurrentComponent={setCurrentComponent} />)
+      setTimeout(() => {setCurrentComponent(1);}, 2500);
     }
     else if(currentComponent === 1) {
       setComponentToDisplay(<Menu setCurrentComponent={setCurrentComponent} />);
