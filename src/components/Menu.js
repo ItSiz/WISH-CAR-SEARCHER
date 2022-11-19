@@ -97,7 +97,9 @@ const Menu = ({setCurrentComponent}) => {
                         ))} */}
                         {/* {(Cars.cars).map((i) => ( */}
                             <div className='class-render'>
-                                <h2 className='car-brand'> {randomCar.brand}</h2>
+                                xxdd
+                                xddx
+                                <h3 className='car-brand'> {randomCar.brand}</h3>
                                 <h3 className='car-name'> {randomCar.name}</h3>
                             </div>
                         {/* ))} */}
@@ -124,7 +126,6 @@ const Menu = ({setCurrentComponent}) => {
 
         <section className='menu-start-searcher'>
             <button className='searching-start-button' onClick={() => setCurrentComponent(2)}>START</button>
-            {/* <img className='wish-car-logo'/> */}
             <h1>WISH CAR SEARCHER</h1>
             <p>Paweł karpiński 2021</p>
         </section>

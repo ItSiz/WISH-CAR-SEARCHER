@@ -13,13 +13,17 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -100px;
+    // top: -100px;
 
     
     .class-render {
+        margin-top: -230px;
+
+
         .car-object {
             display: flex;
             flex-direction: column;
+            margin-top: 130px;
             h2 {
                 font-size: 20px;
                 color: $color-primary;
@@ -35,7 +39,7 @@
                 flex-direction: column;
                 position: relative;
                 top: 100px;
-                margin: 5px 15px;
+                // margin: 5px 15px;
 
                 img {
                     width: 200px;
@@ -96,6 +100,16 @@
                         flex-direction: column;
                     }
                 }
+            }
+            .today-footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                    p {
+                        margin: 0;
+                    }
+
             }
         }
     }

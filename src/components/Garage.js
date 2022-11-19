@@ -113,12 +113,14 @@ const Garage = ({setCurrentComponent}) => {
                                 <Collapse in={open}>
                                     <div id="more-info">
                                         <div>
-                                            
+                                            aaxdassa
+                                            assasasa
+                                            dsadasd
                                             {/* {caring. */}
                                         </div>
                                     </div>
                                 </Collapse>
-                                        <p>The car of the Day</p>
+                                <p>The car of the Day</p>
                             </div>
                         </div>    
                             {/* <img className='car-front' src={carz.photo_front}/>
