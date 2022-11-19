@@ -85,7 +85,7 @@ const App = () => {
   return (
     <>
       {/* <Loading/> */}
-      {/* {componentToDisplay} */}
+      {componentToDisplay}
       {/* <Menu/> */}
       {/* <Segments/> */}
       {/* <BodyType/> */}
@@ -95,7 +95,7 @@ const App = () => {
       {/* <Budget/> */}
       {/* <Results/> */}
       {/* <RoundSlider/> */}
-      <Garage/>
+      {/* <Garage/> */}
       </>
 
   )
