@@ -51,6 +51,10 @@ const Garage = ({setCurrentComponent}) => {
         <>
             <section className='garage-top'>
                 Full Car List
+                <p>{Cars.cars.find((a)=>a.id===6).id}</p>
+                {/* {(Cars.cars).filter(car => car.id===6).map((caring) => (<div>
+                    a {caring.name}
+                </div>))} */}
             </section>
             <section className='car-render'>
                 {(Cars.cars).map((caring) => (
@@ -128,6 +132,7 @@ const Garage = ({setCurrentComponent}) => {
                             <img className='car-back' src={carz.photo_back}/> */}
                     </div>
                 ))}
+                
             </section>
 
 

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 // import { Link } from "react-router-dom";
 import "../scss/menu.scss";
 import CarOusel from './Carousel';
+import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 // import App from '../App';
@@ -13,8 +14,17 @@ const Username = (user) => {
     return "USERONE";
 }
 
+const getRandomNr = (min, max) => { 
+    return Math.floor(Math.random() * (max - min + 1)) + min; 
+}
+
+const randomCarIndex = getRandomNr(1, 28);
+
+
 const Menu = ({setCurrentComponent}) => {
     const [open, setOpen] = useState(false);
+
+    const carOfTheDay = Cars.cars[randomCarIndex]
 
 
     // const ages = [32, 33, 16, 40];
@@ -24,23 +34,7 @@ const Menu = ({setCurrentComponent}) => {
     // return age >= 18;
     // }
 
-    const randomCar = ({Cars}) => {
-            
-        const randomNr = (min, max) => { 
-            return Math.floor(Math.random() * (max - min + 1)) + min; 
-        }
-        console.log(randomNr(1, 28));
-
-        // const carDay = () => {
-        //     const {cars.id} = randomNr(1, 28)
-        // };
-
-        // const carOfTheDay = (Cars.cars).filter(carDay);
-        const carOfTheDay = (Cars.cars).filter(() => (Cars.cars).id = randomNr());
-        console.log(carOfTheDay)
-        // window.onload = randomNr;
-    }
-
+    
     return (
     <>
         <section className='garage-top'>
@@ -51,14 +45,31 @@ const Menu = ({setCurrentComponent}) => {
             {/* <div className='car-presentation'>  */}
                 {/* <img className='brand-logo' src='https://upload.wikimedia.org/wikipedia/de/1/1c/Skoda_Logo.svg'/>
                 <div className='car-photo'> */}
-                    <CarOusel/>
+                    {/* <CarOusel/> */}
                 {/* </div> */}
             {/* </div> */}
+                <Carousel>
+                    <Carousel.Item>
+                        <img className="d-block w-100 car-front"
+                        src={carOfTheDay.photo_front}
+                        alt="Front view"/>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="d-block w-100 car-side"
+                        src={carOfTheDay.photo_side}
+                        alt="Side view"/>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="d-block w-100 car-back"
+                        src={carOfTheDay.photo_back}
+                        alt="Back view"/>
+                    </Carousel.Item>
+                </Carousel>
             <div className='parameters-box'>
                 <div className='car-title'>
                     <div className='title-description'>
-                        <p className='car-brand'>SKODA</p>
-                        <p className='car-name'>Eniaq IV</p>
+                        <p className='car-brand'>{carOfTheDay.brand}</p>
+                        <p className='car-name'>{carOfTheDay.name}</p>
                     </div>
                     <i className="fa-solid fa-heart"></i>
                 </div>
@@ -69,8 +80,8 @@ const Menu = ({setCurrentComponent}) => {
                             <img className='bodytype-icon' src="https://cdn-icons-png.flaticon.com/512/832/832988.png"/>
                         </div>
                         <div className='parameters-datas'>
-                            <span className='engine-stats statis'>58,0 kWh</span>
-                            <span className='bodytype-stats statis'>electric</span>
+                            <span className='engine-stats statis'>{carOfTheDay.engine.hp_max} kWh</span>
+                            <span className='bodytype-stats statis'>{carOfTheDay.engine.type.join(', ')}</span>
                         </div>
                     </div>
                     <div className='box-right'>
@@ -99,8 +110,8 @@ const Menu = ({setCurrentComponent}) => {
                             <div className='class-render'>
                                 xxdd
                                 xddx
-                                <h3 className='car-brand'> {randomCar.brand}</h3>
-                                <h3 className='car-name'> {randomCar.name}</h3>
+                                {/* <h3 className='car-brand'> {randomCar.brand}</h3>
+                                <h3 className='car-name'> {randomCar.name}</h3> */}
                             </div>
                         {/* ))} */}
                     </div>

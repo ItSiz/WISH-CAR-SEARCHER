@@ -30,7 +30,7 @@ const Results = ({setCurrentComponent}) => {
 
         <section className='exit-to-menu-button'>
                 <button className='next-icon' onClick={handleShow}>
-                    <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
+                    <i className="fa-solid fa-x fa-exit" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                 </button>
 
                 <Modal

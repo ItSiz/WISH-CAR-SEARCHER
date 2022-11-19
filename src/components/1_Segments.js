@@ -4,11 +4,22 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 const Segments = ({setCurrentComponent}) => {
-    const [carSegment, setCarSegment] = useState("");
-
+    const [carSegment, setCarSegment] = useState([]);
+    const toogleListElement = (segment) => {
+        const newSegmentIndex = carSegment.indexOf(segment)
+        if(newSegmentIndex===-1) {
+            setCarSegment([...carSegment, segment])
+        } else {
+            const newSegments = [...carSegment]
+            newSegments.splice(newSegmentIndex, 1)
+            setCarSegment(newSegments)
+        }
+    }
+    console.log(carSegment);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
 
     return (
     <>
@@ -17,7 +28,7 @@ const Segments = ({setCurrentComponent}) => {
         </section>
 
         <section className='questions-body segemnts-body'>
-            <button className='segemnts-question class-a' onClick={() => setCarSegment("A")}>
+            <button className='segemnts-question class-a' onClick={() => toogleListElement("A")}>
                 <div className='question-space-segments'>
                     <img src='https://cdn-icons-png.flaticon.com/512/26/26435.png' alt='mini car icon'/>
                     <p>Class A</p>
@@ -25,7 +36,7 @@ const Segments = ({setCurrentComponent}) => {
             </button>
             <p>mini cars</p>
 
-            <button className='segemnts-question class-b' onClick={() => setCarSegment("B")}>
+            <button className='segemnts-question class-b' onClick={() => toogleListElement("B")}>
                 <div className='question-space-segments'>
                     <img src='https://cdn-icons-png.flaticon.com/512/26/26886.png' alt='smal car icon'/>
                     <p>Class B</p>
@@ -33,7 +44,7 @@ const Segments = ({setCurrentComponent}) => {
             </button>
             <p>small city cars</p>
 
-            <button className='segemnts-question class-c' onClick={() => setCarSegment("C")}>
+            <button className='segemnts-question class-c' onClick={() => toogleListElement("C")}>
                 <div className='question-space-segments'>
                     <img src='https://cdn-icons-png.flaticon.com/512/27/27003.png' alt='medium car icon'/>
                     <p>Class C</p>
@@ -41,7 +52,7 @@ const Segments = ({setCurrentComponent}) => {
             </button>
             <p>medium compact cars</p>
 
-            <button className='segemnts-question class-d' onClick={() => setCarSegment("D")}>
+            <button className='segemnts-question class-d' onClick={() => toogleListElement("D")}>
                 <div className='question-space-segments'>
                     <img src='https://cdn-icons-png.flaticon.com/512/26/26352.png' alt='large car icon'/>
                     <p>Class D</p>
@@ -49,7 +60,7 @@ const Segments = ({setCurrentComponent}) => {
             </button>
             <p>large family cars</p>
 
-            <button className='segemnts-question class-e' onClick={() => setCarSegment("E")}>
+            <button className='segemnts-question class-e' onClick={() => toogleListElement("E")}>
                 <div className='question-space-segments'>
                     <img src='https://cdn-icons-png.flaticon.com/512/27/27068.png' alt='executive car icon'/>
                     <p>Class E</p>
@@ -57,7 +68,7 @@ const Segments = ({setCurrentComponent}) => {
             </button>
             <p>excutive comfort cars</p>
 
-            <button className='segemnts-question class-f' onClick={() => setCarSegment("F")}>
+            <button className='segemnts-question class-f' onClick={() => toogleListElement("F")}>
                 <div className='question-space-segments'>
                     <img src='https://cdn-icons-png.flaticon.com/512/27/27061.png' alt='luxury car icon'/>
                     <p>Class F</p>
