@@ -3,8 +3,8 @@ import "../scss/questions_scss/_1_segmets.scss";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-const Segments = ({setCurrentComponent}) => {
-    const [carSegment, setCarSegment] = useState([]);
+const Segments = ({setCurrentComponent, handleChange, segments}) => {
+    const [carSegment, setCarSegment] = useState(segments);
     const toogleListElement = (segment) => {
         const newSegmentIndex = carSegment.indexOf(segment)
         if(newSegmentIndex===-1) {
@@ -19,6 +19,11 @@ const Segments = ({setCurrentComponent}) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const onNextClick = () => {
+        handleChange(carSegment)
+        setCurrentComponent(3)
+    }
 
 
     return (
@@ -82,7 +87,7 @@ const Segments = ({setCurrentComponent}) => {
                 <button className='next-icon' onClick={() => setCurrentComponent(1)}>
                     <i className="fa-solid fa-arrow-left" data-bs-toggle="popover" title="Previous page" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                 </button>
-                <button className='next-buton' onClick={() => setCurrentComponent(3)}>
+                <button className='next-buton' onClick={() => onNextClick()}>
                     next
                 </button>     
                 <button className='next-icon' onClick={handleShow}>

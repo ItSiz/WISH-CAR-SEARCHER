@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./scss/app.scss";
 import Menu from './components/Menu';
@@ -11,14 +11,29 @@ import Budget from './components/6_Budget';
 import Results from './components/7_Results';
 import Garage from './components/Garage';
 import Loading from './components/Loading';
-
-// import { Routes, Route, Link } from "react-router-dom";
+import Cars from './database/car-data-base.json';
 
 
 const App = () => {
-
+  const [filterOptions, setFilterOptions] = useState({
+    selectedSegments: [],
+    gearbox: ''
+  })
   const [currentComponent, setCurrentComponent] = useState(0);
   const [componentToDisplay, setComponentToDisplay] = useState(<Loading setCurrentComponent={setCurrentComponent} />);
+
+  const setSelectedSegments = (selectedSegments) => {
+    setFilterOptions({...filterOptions, ...{selectedSegments}})
+  }
+
+  const getFilteredCars = () => {
+    const filteredCards = Cars.cars.filter((car) => {
+      return filterOptions.selectedSegments.includes(car.segment) 
+      // &&
+      // filterOptions.gearbox === car.gearbox
+    })
+    return filteredCards
+  }
 
   // const timer1 = setTimeout(() => {setCurrentComponent(1);}, 1000);
 
@@ -51,7 +66,7 @@ const App = () => {
       setComponentToDisplay(<Menu setCurrentComponent={setCurrentComponent} />);
     }
     else if(currentComponent === 2) {
-      setComponentToDisplay(<Segments setCurrentComponent={setCurrentComponent}/>);
+      setComponentToDisplay(<Segments setCurrentComponent={setCurrentComponent} segments={filterOptions.selectedSegments} handleChange={setSelectedSegments}/>);
     } 
     else if (currentComponent === 3) {
       setComponentToDisplay(<BodyType setCurrentComponent={setCurrentComponent}/>);
@@ -73,7 +88,7 @@ const App = () => {
       setTimeout(() => {setCurrentComponent(9);}, 2000);
     }
     else if (currentComponent === 9) {
-      setComponentToDisplay(<Results setCurrentComponent={setCurrentComponent}/>);
+      setComponentToDisplay(<Results getFilteredCars setCurrentComponent={setCurrentComponent}/>);
       
     }
     else if (currentComponent === 10) {
@@ -85,7 +100,10 @@ const App = () => {
   return (
     <>
       {/* <Loading/> */}
-      {componentToDisplay}
+      {/* <div>
+        <div>{filterOptions.selectedSegments}</div>
+        {componentToDisplay}
+      </div> */}
       {/* <Menu/> */}
       {/* <Segments/> */}
       {/* <BodyType/> */}
@@ -95,7 +113,7 @@ const App = () => {
       {/* <Budget/> */}
       {/* <Results/> */}
       {/* <RoundSlider/> */}
-      {/* <Garage/> */}
+      <Garage/>
       </>
 
   )

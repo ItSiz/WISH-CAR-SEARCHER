@@ -47,11 +47,19 @@ const Garage = ({setCurrentComponent}) => {
         //  <p className='cos'>{cars.name}</p>
         // ))
 
+    const carBrandLabel = () => {
+        if (Cars.cars.brand === "Skoda") {
+            return "'./brands/skoda_logo.png'"
+        } else if (Cars.cars.brand === "BMW") {
+            return "'./brands/bmw_logo.png'"
+        }
+    }
+
     return (     
         <>
             <section className='garage-top'>
                 Full Car List
-                <p>{Cars.cars.find((a)=>a.id===6).id}</p>
+                {/* <p>{Cars.cars.find((a)=>a.id===6).id}</p> */}
                 {/* {(Cars.cars).filter(car => car.id===6).map((caring) => (<div>
                     a {caring.name}
                 </div>))} */}
@@ -61,7 +69,7 @@ const Garage = ({setCurrentComponent}) => {
                     <div className='class-render' key={caring.id}>
                         <div className='car-object'>
                             <div className='car-photos'>
-                                <img className='brand-logo' src='./brands/skoda_logo.png'/>
+                                <img className='brand-logo' src={caring.logo}/>
                                 <div className='car-photo'>
                                     <Carousel>
                                         <Carousel.Item>
@@ -99,6 +107,7 @@ const Garage = ({setCurrentComponent}) => {
                                         <div className='parameters-datas'>
                                             <span className='engine-stats statis'>{caring.engine.hp_max} {caring.engine.unit}</span>
                                             <span className='bodytype-stats statis'>{caring.engine.type}</span>
+                                            <i className="fa-solid fa-heart"></i>
                                         </div>
                                     </div>
                                     <div className='box-right'>
@@ -106,6 +115,17 @@ const Garage = ({setCurrentComponent}) => {
                                         <span>PLN *</span>
                                     </div>
                                 </div>
+                                <Collapse in={open}>
+                                    <div id="more-infos">
+                                        <div className='more-stats'>
+                                            <div className='more-ad'><span>Gearbox</span><p>{caring.engine.gearbox}</p></div>
+                                            <div className='more-ad'><span>0/100kmh</span><p>{caring.engine.speed}</p></div>
+                                            <div className='more-ad'><span>Segment</span><p>{caring.segment}</p></div>
+                                            <div className='more-ad'><span>Body</span><p>{caring.body}</p></div>
+                                            <div className='more-ad'><span>Range</span><p>{caring.engine.max_range}km</p></div>
+                                        </div>
+                                    </div>
+                                </Collapse>
                             </div>
                             <div className='today-footer'>
                                 <button className='menu-more-button'
@@ -114,17 +134,7 @@ const Garage = ({setCurrentComponent}) => {
                                     aria-expanded={open}> 
                                     More
                                 </button>
-                                <Collapse in={open}>
-                                    <div id="more-info">
-                                        <div>
-                                            aaxdassa
-                                            assasasa
-                                            dsadasd
-                                            {/* {caring. */}
-                                        </div>
-                                    </div>
-                                </Collapse>
-                                <p>The car of the Day</p>
+                                
                             </div>
                         </div>    
                             {/* <img className='car-front' src={carz.photo_front}/>

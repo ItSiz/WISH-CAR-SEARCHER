@@ -6,6 +6,9 @@ import Modal from 'react-bootstrap/Modal';
 
 
 const Budget = ({setCurrentComponent}) => {
+    // const [carSegment, setCarSegment] = useState(segments);
+
+
     const [carBudgetLow, setCarBudgetLow] = useState("")
     const [carBudgetHigh, setCarBudgetHigh] = useState("")
     window.addEventListener('value-changed', (event)=>{console.log(event)});
@@ -68,8 +71,6 @@ const Budget = ({setCurrentComponent}) => {
                     </div>
                 </div>
             </section>
-
-
 
             <section className='questions-bottom'>
                 <div className='buttons-section'>

@@ -5,9 +5,18 @@
     font-family: $font-Righteous;
 }
 
-.visually-hidden {
-    color: red;
+// .visually-hidden {
+//     color: red;
+//     background: red;
+// }
+
+.floating-exit-to-menu-button {
     background: red;
+}
+
+.exit-x {
+    background: none;
+    border: none;
 }
 
 .fa-exit {

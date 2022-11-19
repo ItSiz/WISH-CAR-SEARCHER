@@ -21,11 +21,12 @@
         "price_max": 116500,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Eniaq_IV_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Eniaq_IV_side.png",
-        "photo_back":"https://wisg-car-database.netlify.app/skoda/Eniaq_IV_back.png"
+        "photo_back":"https://wisg-car-database.netlify.app/skoda/Eniaq_IV_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 2,
-        "name": "ENYAQ COUPE",
+        "name": "Enyaq Coupe",
         "brand": "Skoda",
         "engine": {
           "type": "electric",
@@ -44,7 +45,8 @@
         "price_max": 318000,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Eniaq_Sport_Coupe_IV_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Eniaq_Sport_Coupe_IV_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Eniaq_Sport_Coupe_IV_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Eniaq_Sport_Coupe_IV_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 3,
@@ -67,7 +69,8 @@
         "price_max": 116500,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Kamiq_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Kamiq_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Kamiq_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Kamiq_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 4,
@@ -90,7 +93,8 @@
         "price_max": 371700,
         "photo_front": "https://wisg-car-database.netlify.app/jeep/Wrangler_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/jeep/Wrangler_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/jeep/Wrangler_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/jeep/Wrangler_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/jeep_logo.png"
       },
       {
         "id": 5,
@@ -113,7 +117,8 @@
         "price_max": 339500,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/518d_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/bmw/518d_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/bmw/518d_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/bmw/518d_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/bmw_logo.png"
       },
       {
         "id": 6,
@@ -136,7 +141,8 @@
         "price_max": 196000,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/216_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/bmw/216_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/bmw/216_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/bmw/216_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/bmw_logo.png"
       },
       {
         "id": 7,
@@ -159,7 +165,8 @@
         "price_max": 609000,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/IX_M60_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/bmw/IX_M60_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/bmw/IX_M60_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/bmw/IX_M60_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/bmw_logo.png"
       },
       {
         "id": 8,
@@ -182,7 +189,8 @@
         "price_max": 497500,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/420i_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/bmw/420i_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/bmw/420i_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/bmw/420i_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/bmw_logo.png"
       },
       {
         "id": 9,
@@ -205,7 +213,8 @@
         "price_max": 325000,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/Z4_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/bmw/Z4_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/bmw/Z4_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/bmw/Z4_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/bmw_logo.png"
       },
       {
         "id": 10,
@@ -228,7 +237,8 @@
         "price_max": 235000,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/218_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/bmw/218_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/bmw/218_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/bmw/218_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/bmw_logo.png"
       },
       {
         "id": 11,
@@ -251,7 +261,8 @@
         "price_max": 72250,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Fabia_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Fabia_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Fabia_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Fabia_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 12,
@@ -274,7 +285,8 @@
         "price_max": 113100,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Karoq_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Karoq_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Karoq_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Karoq_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 13,
@@ -297,7 +309,8 @@
         "price_max": 156200,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Kodiaq_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Kodiaq_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Kodiaq_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Kodiaq_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 14,
@@ -320,7 +333,8 @@
         "price_max": 153450,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Superb_sedan_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Superb_sedan_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Superb_sedan_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Superb_sedan_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 15,
@@ -343,7 +357,8 @@
         "price_max":177650,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Octavia_sedan_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Octavia_sedan_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Octavia_sedan_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Octavia_sedan_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 16,
@@ -366,7 +381,8 @@
         "price_max":334900,
         "photo_front": "https://wisg-car-database.netlify.app/toyota/Mirai_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/toyota/Mirai_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/toyota/Mirai_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/toyota/Mirai_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/toyota_logo.png"
       },
       {
         "id": 17,
@@ -389,7 +405,8 @@
         "price_max":104900,
         "photo_front": "https://wisg-car-database.netlify.app/suzuki/Jimmy_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/suzuki/Jimmy_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/suzuki/Jimmy_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/suzuki/Jimmy_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/suzuki_log.png"
       },
       {
         "id": 18,
@@ -412,7 +429,8 @@
         "price_max":728500,
         "photo_front": "https://wisg-car-database.netlify.app/mercedes/G_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/mercedes/G_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/mercedes/G_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/mercedes/G_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/mercedes_logo.png"
       },
       {
         "id": 19,
@@ -435,7 +453,8 @@
         "price_max":1175600,
         "photo_front": "https://wisg-car-database.netlify.app/mercedes/S580_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/mercedes/S580_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/mercedes/S580_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/mercedes/S580_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/mercedes_logo.png"
       },
       {
         "id": 20,
@@ -458,7 +477,8 @@
         "price_max":617800,
         "photo_front": "https://wisg-car-database.netlify.app/audi/e-tron_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/audi/e-tron_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/audi/e-tron_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/audi/e-tron_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/audi_logo.png"
       },
       {
         "id": 21,
@@ -481,7 +501,8 @@
         "price_max":1121900,
         "photo_front": "https://wisg-car-database.netlify.app/audi/R8_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/audi/R8_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/audi/R8_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/audi/R8_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/audi_logo.png"
       },
       {
         "id": 22,
@@ -504,7 +525,8 @@
         "price_max":108300,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Scala_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Scala_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Scala_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Scala_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 23,
@@ -527,7 +549,8 @@
         "price_max": 153450,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Superb_combi_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Superb_combi_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Superb_combi_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Superb_combi_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 24,
@@ -550,7 +573,8 @@
         "price_max": 177650,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Octavia_combi_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/skoda/Octavia_combi_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/skoda/Octavia_combi_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/skoda/Octavia_combi_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/skoda_logo.png"
       },
       {
         "id": 25,
@@ -573,7 +597,8 @@
         "price_max":153494,
         "photo_front": "https://wisg-car-database.netlify.app/mitsubishi/L_200_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/mitsubishi/L_200_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/mitsubishi/L_200_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/mitsubishi/L_200_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/mitsubishi_logo.png"
       },
       {
         "id": 26,
@@ -596,7 +621,8 @@
         "price_max":177151,
         "photo_front": "https://wisg-car-database.netlify.app/mitsubishi/L_200_stark_front.png",
         "photo_side": "https://wisg-car-database.netlify.app/mitsubishi/L_200_stark_side.png",
-        "photo_back": "https://wisg-car-database.netlify.app/mitsubishi/L_200_stark_back.png"
+        "photo_back": "https://wisg-car-database.netlify.app/mitsubishi/L_200_stark_back.png",
+        "logo": "https://wisg-car-database.netlify.app/logos/mitsubishi_logo.png"
       }
 
     ]

@@ -80,7 +80,7 @@ const Menu = ({setCurrentComponent}) => {
                             <img className='bodytype-icon' src="https://cdn-icons-png.flaticon.com/512/832/832988.png"/>
                         </div>
                         <div className='parameters-datas'>
-                            <span className='engine-stats statis'>{carOfTheDay.engine.hp_max} kWh</span>
+                            <span className='engine-stats statis'>{carOfTheDay.engine.hp_max} {carOfTheDay.engine.unit}</span>
                             <span className='bodytype-stats statis'>{carOfTheDay.engine.type.join(', ')}</span>
                         </div>
                     </div>
