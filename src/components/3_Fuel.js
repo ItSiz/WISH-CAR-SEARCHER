@@ -22,13 +22,13 @@ const Fuel = ({setCurrentComponent}) => {
             <section className='questions-body fuel-body'>
                 <button className='body-questions fuel-questions' onClick={() => setCarFuel("petrol")}>
                     <div className='question-space-fuel petrol-fuel'>
-                        <img src='http://www.cena-pradu.pl/95.png' alt='petrol icon'/>
+                        <img src='https://wisg-car-database.netlify.app/icons/95icon.png' alt='petrol icon'/>
                         <p>petrol</p>
                     </div>
                 </button>
                 <button className='body-questions fuel-questions' onClick={() => setCarFuel("diesel")}>
                     <div className='question-space-fuel diesel-fuel'>
-                        <img src='http://www.cena-pradu.pl/ON.png' alt='diesel icon'/>
+                        <img src='https://wisg-car-database.netlify.app/icons/ONicon.png' alt='diesel icon'/>
                         <p>diesel</p>
                     </div>
                 </button>
