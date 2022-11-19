@@ -5,223 +5,317 @@
     font-family: $font-Righteous;
 }
 
-
-.menu-todays-car {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
-    position: relative;
-    top: -20px;
-
-    .car-presentation {
-        .brand-logo {
-            width: 100px;
-            height: 40px;
-            position: relative;
-            z-index: 1;
-            top: 45px;
-            background: none;
-        }
-        .car-photo {
-            position: relative;
-            top: -40px;
-            z-index: 2;
-
-            .carousel-indicators {
-                // display: none;
-                background: none;
-
-                & button {
-                    background-color: $background-main-color;
-                }
-            }
-
-        }
-    }
-
-    .parameters-box {
-        background-color: $text-full-light;
-        height: 200px;
-        // width: 325px;
-        margin-left: 15px;
-        margin-right: 15px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        top: -120px;
-        position: relative;
-        border-radius: 15px;
-
-        .car-title {
-            display: flex;
-            justify-content: center;
-            background: none;
-            font-family: $font-Righteous;
-            margin-top: 70px;
-            
-
-            .title-description {
-                display: flex;
-                background: none;
-                font-size: 26px;
-                height: 40px;
-                margin-top: 5px;
-
-                .car-brand {
-                    color: $color-primary;
-                    margin-right: 10px;
-                }
-                .car-name {
-                    color: $text-dark;
-                }
-                & p {
-                    background: none;
-                }
-
-            }
-
-            .fa-heart {
-                color: $background-main-color;
-                background: none;
-                display: flex;
-                align-items: center;
-                left: 35px;
-                position: relative;
-                font-size: 20px;
-
-                &:hover {
-                    color: $color-primary;
-                }
-                &:active {
-                    color: $color-primary;
-                }
-                &:focus {
-                    color: $color-primary;
-                }
-            }
-        }
-
-        .car-data-box {
-            background: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            font-size: 18px;
-            font-family: $font-Righteous;
-
-            .box-left {
-                color: $text-dark;
-                background: none;
-                display: flex;
-                align-items: center;
-
-                .parameters-icons {
-                    background: none;
-                    display: flex;
-                    flex-direction: column;
-                    margin-right: 10px;
-                
-                    .engine-icon {
-                        background: none;
-                        width: 34px;
-                        height: 34px;
-                        color: $background-main-color;
-                    }
-                    .bodytype-icon {
-                        width: 34px;
-                        height: 34px;
-                        background: none;
-                    }
-                }
-                .parameters-datas {
-                    background: none;
-                    display: flex;
-                    flex-direction: column;
-
-                    .statis {
-                        background: none;
-                    }
-            }
-            }
-            .box-right {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                color: $color-primary;
-                background: none;
-
-                & span {
-                    background: none;
-                    font-size: 20px;
-                    font-weight: 600;
-                    background: none;
-                }
-
-                & span:last-child {
-                    font-size: 10px;
-                }
-            }
-        }
-
-    }
-    
-    .collapse {
-
-        &:not(.show) {
-          display: none;
-        }
-
-
-      }
-      
-    .collapsing {
-    height: 0;
-    overflow: hidden;
-    transition: height .35s ease;
-    }
-
-
+.garage-top {
+    color: $text-dark;
 }
 
-
-
-.today-footer{ 
+.car-render {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: -124px;
+    position: relative;
+    top: -100px;
 
-    .menu-more-button {
-        color: $background-main-color;
-        background: $color-primary;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        top: -10px;
-        width: 105px;
-        border-radius: 10px;
-        border-color: transparent;
-        font-family: $font-Righteous;
-        color: $background-main-color;
-        font-size: 15px;
-        font-weight: 500;
-        // text-transform: uppercase;
-        box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
+    
+    .class-render {
+        .car-object {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                font-size: 20px;
+                color: $color-primary;
+                margin:0 10px 10px 10px;
+            }
+            h3 {
+                font-size: 15px;
 
-        &:hover {
-            background: $color-not-active;
-            color: $text-full-light;
+            }
+
+            .car-photos {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 100px;
+                margin: 5px 15px;
+
+                img {
+                    width: 200px;
+                }
+
+                .brand-logo {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            
+            .parameters-box {
+                display: flex;
+                flex-direction: column;
+                background: $text-full-light;
+                margin: 0 15px;
+                border-radius: 10px;
+
+                .car-title {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: baseline;
+                    justify-content: center;
+
+                    .title-description{
+                        display: flex;
+                        margin-top: 40px;
+                        p {
+                            font-size: 22px;
+                            color: $text-dark;
+                            margin: 0 10px;
+                        }
+                    }
+                    .fa-heart {
+                        font-size: 22px;
+                    }
+
+                }
+                .car-data-box {
+                    display: flex;
+                    .box-left {
+                        display: flex;
+                        .parameters-icons {
+                            display: flex;
+                            flex-direction: column;
+                            .para-ico {
+                                width: 10px;
+                                height: 20px;
+                            }
+                        }
+                        .parameters-datas {
+                            display: flex;
+                            flex-direction: column;
+                        }            
+                    }
+                    .box-right {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
         }
     }
-
-        & p {
-            color: white;
-            justify-content: center;
-            display: block;
-            // font-family: $font-roboto;
-            font-weight: 300;
-            font-size: 12px;
-        }
 }
 
+// .menu-todays-car {
+//     display: flex;
+//     flex-direction: column; 
+//     justify-content: center;
+//     box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
+//     position: relative;
+//     top: -20px;
+
+//     .car-presentation {
+//         .brand-logo {
+//             width: 100px;
+//             height: 40px;
+//             position: relative;
+//             z-index: 1;
+//             top: 45px;
+//             background: none;
+//         }
+//         .car-photo {
+//             position: relative;
+//             top: -40px;
+//             z-index: 2;
+
+//             .carousel-indicators {
+//                 // display: none;
+//                 background: none;
+
+//                 & button {
+//                     background-color: $background-main-color;
+//                 }
+//             }
+
+//         }
+//     }
+
+//     .parameters-box {
+//         background-color: $text-full-light;
+//         height: 200px;
+//         // width: 325px;
+//         margin-left: 15px;
+//         margin-right: 15px;
+//         // display: flex;
+//         // flex-direction: column;
+//         // justify-content: center;
+//         top: -120px;
+//         position: relative;
+//         border-radius: 15px;
+
+//         .car-title {
+//             display: flex;
+//             justify-content: center;
+//             background: none;
+//             font-family: $font-Righteous;
+//             margin-top: 70px;
+            
+
+//             .title-description {
+//                 display: flex;
+//                 background: none;
+//                 font-size: 26px;
+//                 height: 40px;
+//                 margin-top: 5px;
+
+//                 .car-brand {
+//                     color: $color-primary;
+//                     margin-right: 10px;
+//                 }
+//                 .car-name {
+//                     color: $text-dark;
+//                 }
+//                 & p {
+//                     background: none;
+//                 }
+
+//             }
+
+//             .fa-heart {
+//                 color: $background-main-color;
+//                 background: none;
+//                 display: flex;
+//                 align-items: center;
+//                 left: 35px;
+//                 position: relative;
+//                 font-size: 20px;
+
+//                 &:hover {
+//                     color: $color-primary;
+//                 }
+//                 &:active {
+//                     color: $color-primary;
+//                 }
+//                 &:focus {
+//                     color: $color-primary;
+//                 }
+//             }
+//         }
+
+//         .car-data-box {
+//             background: none;
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-evenly;
+//             font-size: 18px;
+//             font-family: $font-Righteous;
+
+//             .box-left {
+//                 color: $text-dark;
+//                 background: none;
+//                 display: flex;
+//                 align-items: center;
+
+//                 .parameters-icons {
+//                     background: none;
+//                     display: flex;
+//                     flex-direction: column;
+//                     margin-right: 10px;
+                
+//                     .engine-icon {
+//                         background: none;
+//                         width: 34px;
+//                         height: 34px;
+//                         color: $background-main-color;
+//                     }
+//                     .bodytype-icon {
+//                         width: 34px;
+//                         height: 34px;
+//                         background: none;
+//                     }
+//                 }
+//                 .parameters-datas {
+//                     background: none;
+//                     display: flex;
+//                     flex-direction: column;
+
+//                     .statis {
+//                         background: none;
+//                     }
+//             }
+//             }
+//             .box-right {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 color: $color-primary;
+//                 background: none;
+
+//                 & span {
+//                     background: none;
+//                     font-size: 20px;
+//                     font-weight: 600;
+//                     background: none;
+//                 }
+
+//                 & span:last-child {
+//                     font-size: 10px;
+//                 }
+//             }
+//         }
+
+//     }
+    
+//     .collapse {
+
+//         &:not(.show) {
+//           display: none;
+//         }
+
+
+//       }
+      
+//     .collapsing {
+//     height: 0;
+//     overflow: hidden;
+//     transition: height .35s ease;
+//     }
+
+
+// }
+
+
+
+// .today-footer{ 
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-top: -124px;
+
+//     .menu-more-button {
+//         color: $background-main-color;
+//         background: $color-primary;
+//         position: relative;
+//         display: flex;
+//         justify-content: center;
+//         top: -10px;
+//         width: 105px;
+//         border-radius: 10px;
+//         border-color: transparent;
+//         font-family: $font-Righteous;
+//         color: $background-main-color;
+//         font-size: 15px;
+//         font-weight: 500;
+//         // text-transform: uppercase;
+//         box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
+
+//         &:hover {
+//             background: $color-not-active;
+//             color: $text-full-light;
+//         }
+//     }
+
+//         & p {
+//             color: white;
+//             justify-content: center;
+//             display: block;
+//             // font-family: $font-roboto;
+//             font-weight: 300;
+//             font-size: 12px;
+//         }
+// }

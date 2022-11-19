@@ -1,9 +1,5 @@
-// import { Button } from 'bootstrap';
 import React, { useState } from 'react';
-// import { Link } from "react-router-dom";
 import "../scss/questions_scss/_1_segmets.scss";
-// import ProgressBar from './Progress_bar';
-// import App from '../App';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 

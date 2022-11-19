@@ -19,6 +19,10 @@
 
         &:hover {
             background: $text-full-light;
+
+            p {
+                color: $text-dark;
+            }
         }
 
         &:active {

@@ -11,7 +11,7 @@ function CarOusel() {
         <img
           className="d-block w-100"
           // src="https://iprenders.blob.core.windows.net/base5azs23100905/2X2X.Z9hLdiHPbBTVo-qdMnEIaU9SJBtvQO-_xmeFU6V0sSh2fZLcvDqJPjt-vsdE_XacgVLC3SQlI1FptmNj85K-AEC-688387dayvext_front1080.png"
-          src='./skoda/Superb_sedan_front.png'
+          src='https://wisg-car-database.netlify.app/audi/e-tron_front.png'
           alt="Front view"
         />
         {/* <Carousel.Caption>
@@ -23,7 +23,7 @@ function CarOusel() {
         <img
           className="d-block w-100"
           // src="https://iprenders.blob.core.windows.net/base5azs23100905/2X2X.Z9hLdiHPbBTVo-qdMnEIaU9SJBtvQO-_xmeFU6V0sSh2fZLcvDqJPjt-vsdE_XacgVLC3SQlI1FptmNj85K-AEC-688387dayvext_side1080.png"
-          src='./skoda/Superb_sedan_side.png'
+          src='https://wisg-car-database.netlify.app/audi/e-tron_side.png'
           alt="Side view"
         />
 
@@ -35,7 +35,8 @@ function CarOusel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./skoda/Superb_sedan_back.png"
+          // src="./skoda/Superb_sedan_back.png"
+          src="https://wisg-car-database.netlify.app/audi/e-tron_back.png"
           alt="Back view"
         />
 

@@ -11,9 +11,9 @@ return (
             <div className="App-name">
                 <h1>WISH CAR</h1>
                 <div className="name-bottom">
-                <span className="le-triangle triangle-left"/>
-                <h2>SEARCHER</h2>
-                <span className="le-triangle triangle-right"/>
+                    <span className="le-triangle triangle-left"/>
+                    <h2>SEARCHER</h2>
+                    <span className="le-triangle triangle-right"/>
                 </div>
             </div>
             <div className="loading-spinner">

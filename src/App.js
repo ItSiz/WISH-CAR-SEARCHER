@@ -69,11 +69,13 @@ const App = () => {
       setComponentToDisplay(<Budget setCurrentComponent={setCurrentComponent}/>);
     }
     else if (currentComponent === 8) {
-      setComponentToDisplay(<Results setCurrentComponent={setCurrentComponent}/>);
+      setComponentToDisplay(<Loading setCurrentComponent={setCurrentComponent}/>);
+      setTimeout(() => {setCurrentComponent(9);}, 2000);
     }
-    // else if (currentComponent === 9) {
-    //   setComponentToDisplay(<Favourites setCurrentComponent={setCurrentComponent}/>);
-    // }
+    else if (currentComponent === 9) {
+      setComponentToDisplay(<Results setCurrentComponent={setCurrentComponent}/>);
+      
+    }
     else if (currentComponent === 10) {
       setComponentToDisplay(<Garage setCurrentComponent={setCurrentComponent}/>);
     }
@@ -83,7 +85,7 @@ const App = () => {
   return (
     <>
       {/* <Loading/> */}
-      {componentToDisplay}
+      {/* {componentToDisplay} */}
       {/* <Menu/> */}
       {/* <Segments/> */}
       {/* <BodyType/> */}
@@ -93,7 +95,7 @@ const App = () => {
       {/* <Budget/> */}
       {/* <Results/> */}
       {/* <RoundSlider/> */}
-      {/* <Garage/> */}
+      <Garage/>
       </>
 
   )

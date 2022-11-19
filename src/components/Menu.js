@@ -6,6 +6,8 @@ import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 // import App from '../App';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import Modal from 'react-bootstrap/Modal';
+import Cars from '../database/car-data-base.json';
 
 const Username = (user) => {
     return "USERONE";
@@ -14,9 +16,34 @@ const Username = (user) => {
 const Menu = ({setCurrentComponent}) => {
     const [open, setOpen] = useState(false);
 
+
+    // const ages = [32, 33, 16, 40];
+    // const result = ages.filter(checkAdult);
+
+    // function checkAdult(age) {
+    // return age >= 18;
+    // }
+
+    const randomCar = ({Cars}) => {
+            
+        const randomNr = (min, max) => { 
+            return Math.floor(Math.random() * (max - min + 1)) + min; 
+        }
+        console.log(randomNr(1, 28));
+
+        // const carDay = () => {
+        //     const {cars.id} = randomNr(1, 28)
+        // };
+
+        // const carOfTheDay = (Cars.cars).filter(carDay);
+        const carOfTheDay = (Cars.cars).filter(() => (Cars.cars).id = randomNr());
+        console.log(carOfTheDay)
+        // window.onload = randomNr;
+    }
+
     return (
     <>
-        <section className='menu-top'>
+        <section className='garage-top'>
             Hello {Username()}
         </section>
 
@@ -28,24 +55,22 @@ const Menu = ({setCurrentComponent}) => {
                 {/* </div> */}
             {/* </div> */}
             <div className='parameters-box'>
-                {/* <div className='white-box'/> */}
                 <div className='car-title'>
                     <div className='title-description'>
                         <p className='car-brand'>SKODA</p>
                         <p className='car-name'>Eniaq IV</p>
                     </div>
-                    {/* <img className='like-icon'/> */}
                     <i className="fa-solid fa-heart"></i>
                 </div>
                 <div className='car-data-box'>
                     <div className='box-left'>
                         <div className='parameters-icons'>
                             <img className='engine-icon' src="https://cdn-icons-png.flaticon.com/512/5557/5557346.png"/>
-                            <img className='bodytype-icon' src="https://cdn-icons-png.flaticon.com/512/55/55280.png"/>
+                            <img className='bodytype-icon' src="https://cdn-icons-png.flaticon.com/512/832/832988.png"/>
                         </div>
                         <div className='parameters-datas'>
                             <span className='engine-stats statis'>58,0 kWh</span>
-                            <span className='bodytype-stats statis'>city suv</span>
+                            <span className='bodytype-stats statis'>electric</span>
                         </div>
                     </div>
                     <div className='box-right'>
@@ -54,7 +79,6 @@ const Menu = ({setCurrentComponent}) => {
                     </div>
 
                 </div>
-                <div/>
             </div>
 
 
@@ -63,16 +87,25 @@ const Menu = ({setCurrentComponent}) => {
                   onClick={() => setOpen(!open)}
                   aria-controls="more-info"
                   aria-expanded={open}> More</button>
-        <Collapse in={open}>
-            <div id="more-info">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-        </Collapse>
-                <p>The car of the Day</p>
-            </div>
-        </section>
+                <Collapse in={open}>
+                    <div id="more-info">
+                        {/* {(Cars.cars).map((caring, i) => (
+                            <div className='class-render' key={i}>
+                                <h2 className='car-brand'> {caring.brand}</h2>
+                                <h3 className='car-name'> {caring.name}</h3>
+                            </div>
+                        ))} */}
+                        {/* {(Cars.cars).map((i) => ( */}
+                            <div className='class-render'>
+                                <h2 className='car-brand'> {randomCar.brand}</h2>
+                                <h3 className='car-name'> {randomCar.name}</h3>
+                            </div>
+                        {/* ))} */}
+                    </div>
+                </Collapse>
+                        <p>The car of the Day</p>
+                    </div>
+                </section>
 
         <section className='menu-nav'>
             <button className='whishlist-button nav-button'>

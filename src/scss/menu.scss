@@ -413,13 +413,14 @@ $transition-collapse: height .35s ease;
     justify-content: space-evenly;
     border: none;
 
-    button {
+    .btn-primary {
         background: $text-full-light;
         color: $border-black;
         border: none;
 
         &:hover {
             background: $background-submain-color;
+            color: $text-full-light;
         }
         &:last-of-type {
             background-color: $color-secondary;
