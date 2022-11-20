@@ -20,19 +20,10 @@ const getRandomNr = (min, max) => {
 
 const randomCarIndex = getRandomNr(1, 28);
 
-
 const Menu = ({setCurrentComponent}) => {
     const [open, setOpen] = useState(false);
 
     const carOfTheDay = Cars.cars[randomCarIndex]
-
-
-    // const ages = [32, 33, 16, 40];
-    // const result = ages.filter(checkAdult);
-
-    // function checkAdult(age) {
-    // return age >= 18;
-    // }
 
     
     return (
@@ -42,12 +33,6 @@ const Menu = ({setCurrentComponent}) => {
         </section>
 
         <section className='menu-todays-car'>
-            {/* <div className='car-presentation'>  */}
-                {/* <img className='brand-logo' src='https://upload.wikimedia.org/wikipedia/de/1/1c/Skoda_Logo.svg'/>
-                <div className='car-photo'> */}
-                    {/* <CarOusel/> */}
-                {/* </div> */}
-            {/* </div> */}
             <div className='car-photos menu-car'>
                 <img className='brand-logo' src={carOfTheDay.logo}/>
                 <div className='car-photo'>
@@ -94,7 +79,8 @@ const Menu = ({setCurrentComponent}) => {
                         <span>PLN *</span>
                     </div>
                 </div>
-                {/* <Collapse in={open}>
+                {/* <div className='xd'>
+                <Collapse in={open}>
                     <div id="more-infos">
                         <div className='more-stats'>
                             <div className='more-ad'><span>Gearbox</span><p>{carOfTheDay.engine.gearbox}</p></div>
@@ -104,19 +90,19 @@ const Menu = ({setCurrentComponent}) => {
                             <div className='more-ad'><span>Range</span><p>{carOfTheDay.engine.max_range}km</p></div>
                         </div>
                     </div>
-                </Collapse> */}
-                {/* <div className='today-footer'>
-                    <button className='menu-more-button'
-                    onClick={() => setOpen(!open)}
-                    aria-controls="more-info"
-                    aria-expanded={open}> 
-                    More
-                    </button>
+                </Collapse>
+                </div>
+                <div className='today-footer'>
+                        <button className='menu-more-button'
+                        onClick={() => setOpen(!open)}
+                        aria-controls="more-info"
+                        aria-expanded={open}> 
+                        More
+                        </button>
 
-                </div> */}
-
+                    </div> */}
             </div>
-            <Collapse in={open}>
+                <Collapse in={open}>
                     <div id="more-infos">
                         <div className='more-stats'>
                             <div className='more-ad'><span>Gearbox</span><p>{carOfTheDay.engine.gearbox}</p></div>
@@ -134,10 +120,8 @@ const Menu = ({setCurrentComponent}) => {
                   aria-expanded={open}> 
                   More
                 </button>
- 
+                <p>The car of the Day</p>    
             </div>
-            <p>The car of the Day</p>
-                        {/* <p>The car of the Day</p> */}
         </section>
 
         <section className='menu-nav'>

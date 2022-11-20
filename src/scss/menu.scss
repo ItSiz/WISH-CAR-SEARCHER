@@ -75,9 +75,10 @@ $transition-collapse: height .35s ease;
         // display: flex;
         // flex-direction: column;
         // justify-content: center;
-        top: -120px;
-        position: relative;
+        // top: -120px;
+        // position: relative;
         border-radius: 15px;
+        margin-top: -120px;
 
         .car-title {
             display: flex;
@@ -207,49 +208,8 @@ $transition-collapse: height .35s ease;
                     font-size: 10px;
                     color: $color-primary;
                 }
-            }
-
-            
+            }          
         }
-        .more-infos {
-            background: $text-full-light;
-            display: flex;
-            border-radius: 10px;
-            margin-top: -10px;
-        }
-            .more-stats {
-                background: $text-full-light;
-                padding: 10px;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                border-radius: 10px;
-                
-                .more-ad {
-                    color: $text-dark;
-                    display: flex;
-                    align-items: center;
-                    margin: -8px 5px;
-                    align-items: baseline;
-                    span {
-                        color: $text-dark;
-                        margin: 0 15px 0 45px
-                    }
-                    // &:first-of-type {
-                    //     margin-left: 0;
-                    // }
-                    // &:last-of-type {
-                    //     margin-right: 0;
-                    // }
-                    p {
-                        color: $color-secondary;
-                        font-size: 14px;
-                    }
-                }
-
-            }
-
-
 }
 
 .more-infos {
@@ -265,6 +225,7 @@ $transition-collapse: height .35s ease;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
+        margin: -20px 15px 0 15px;
         
         .more-ad {
             color: $text-dark;
@@ -290,8 +251,6 @@ $transition-collapse: height .35s ease;
 
     }
 
-
-// WHY NIE W .menu-todays-car???
 
 .today-footer{ 
     display: flex;

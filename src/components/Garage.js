@@ -9,9 +9,6 @@ import Collapse from 'react-bootstrap/Collapse';
 import Cars from '../database/car-data-base.json';
 import Carousel from 'react-bootstrap/Carousel';
 
-
-
-const API = "http://localhost:3000";
  
 
 
