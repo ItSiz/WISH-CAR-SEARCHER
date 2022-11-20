@@ -14,7 +14,6 @@ const Garage = ({setCurrentComponent}) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-
     const carBrandLabel = () => {
         if (Cars.cars.brand === "Skoda") {
             return "'./brands/skoda_logo.png'"

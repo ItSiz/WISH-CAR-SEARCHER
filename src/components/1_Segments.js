@@ -16,15 +16,13 @@ const Segments = ({setCurrentComponent, handleChange, segments}) => {
         }
     }
     console.log(carSegment);
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
     const onNextClick = () => {
         handleChange(carSegment)
         setCurrentComponent(3)
     }
-
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
     <>

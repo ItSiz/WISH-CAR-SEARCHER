@@ -18,22 +18,28 @@ const App = () => {
   const [filterOptions, setFilterOptions] = useState({
     selectedSegments: [],
     selectedBody: [],
+    selectedFuel: [],
   })
   const [currentComponent, setCurrentComponent] = useState(0);
   const [componentToDisplay, setComponentToDisplay] = useState(<Loading setCurrentComponent={setCurrentComponent} />);
   const [selectedCars, setSelectedCars] = useState([])
 
   const setSelectedSegments = (selectedSegments) => {
+        // console.log(selectedSegments)
     setFilterOptions({...filterOptions, ...{selectedSegments}})
   }
   const setSelectedBody = (selectedBody) => {
-    console.log(selectedBody)
+    // console.log(selectedBody)
     setFilterOptions({...filterOptions, ...{selectedBody}})
   }
-
+  const setSelectedFuel = (selectedFuel) => {
+    // console.log(selectedFuel)
+    setFilterOptions({...filterOptions, ...{selectedFuel}})
+  }
   const getFilteredCars = () => {
     const filteredCards = Cars.cars.filter((car) => {
       return filterOptions.selectedSegments.includes(car.segment) 
+      // && filterOptions.selectedBody.includes(car.body) && filterOptions.selectedFuel.includes(car.fuels)
       // &&
       // filterOptions.gearbox === car.gearbox
     })
@@ -80,10 +86,10 @@ const App = () => {
       setComponentToDisplay(<Segments setCurrentComponent={setCurrentComponent} segments={filterOptions.selectedSegments} handleChange={setSelectedSegments}/>);
     } 
     else if (currentComponent === 3) {
-      setComponentToDisplay(<BodyType setCurrentComponent={setCurrentComponent} body={filterOptions.selectedBody} handleChange={setSelectedBody}/>);
+      setComponentToDisplay(<BodyType setCurrentComponent={setCurrentComponent} bodys={filterOptions.selectedBody} handleChange={setSelectedBody}/>);
     }
     else if (currentComponent === 4) {
-      setComponentToDisplay(<Fuel setCurrentComponent={setCurrentComponent}/>);
+      setComponentToDisplay(<Fuel setCurrentComponent={setCurrentComponent} fuels={filterOptions.selectedFuel} handleChange={setSelectedFuel}/>);
     }
     else if (currentComponent === 5) {
       setComponentToDisplay(<Power setCurrentComponent={setCurrentComponent}/>);

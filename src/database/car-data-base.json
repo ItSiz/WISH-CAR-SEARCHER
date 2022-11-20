@@ -16,7 +16,7 @@
           "speed": "6.9s"
         },
         "segment": "D",
-        "body": "suv",
+        "body": ["suv"],
         "price_min": 210150,
         "price_max": 298900,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Eniaq_IV_front.png",
@@ -40,7 +40,7 @@
           "speed": "6.4s"
         },
         "segment": "D",
-        "body": "suv",
+        "body": ["suv"],
         "price_min": 295900,
         "price_max": 318000,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Eniaq_Sport_Coupe_IV_front.png",
@@ -63,7 +63,7 @@
           "gearbox": ["manual"],
           "speed":  "215km/h"
         },
-        "body": "suv",
+        "body": ["suv"],
         "segment": "B",
         "price_min":78200,
         "price_max": 116500,
@@ -88,7 +88,7 @@
           "speed": "6,4s"
         },
         "segment": "D",
-        "body": "off-road",
+        "body": ["off-road"],
         "price_min": 361700,
         "price_max": 371700,
         "photo_front": "https://wisg-car-database.netlify.app/jeep/Wrangler_front.png",
@@ -112,7 +112,7 @@
           "speed": "6,1s"
         },
         "segment": "E",
-        "body": "combi",
+        "body": ["combi"],
         "price_min": 245000,
         "price_max": 339500,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/518d_front.png",
@@ -136,7 +136,7 @@
           "speed":  "5,5s"
         },
         "segment": "C",
-        "body": "minivan",
+        "body": ["minivan"],
         "price_min": 138000,
         "price_max": 196000,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/216_front.png",
@@ -160,7 +160,7 @@
           "speed":  "3,8"
         },
         "segment": "F",
-        "body": "suv",
+        "body": ["suv"],
         "price_min": 378300,
         "price_max": 609000,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/IX_M60_front.png",
@@ -184,7 +184,7 @@
           "speed":  "3,7s"
         },
         "segment": "D",
-        "body": "cabrio",
+        "body": ["cabrio"],
         "price_min": 235000,
         "price_max": 497500,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/420i_front.png",
@@ -208,7 +208,7 @@
           "speed":  "4,5"
         },
         "segment": "C",
-        "body": "cabrio",
+        "body": ["cabrio"],
         "price_min": 220000,
         "price_max": 325000,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/Z4_front.png",
@@ -232,7 +232,7 @@
           "speed":  "4,9"
         },
         "segment": "C",
-        "body": "coupe",
+        "body": ["coupe"],
         "price_min":  141000,
         "price_max": 235000,
         "photo_front": "https://wisg-car-database.netlify.app/bmw/218_front.png",
@@ -256,7 +256,7 @@
           "speed":  "null"
         },
         "segment": "B",
-        "body": "hatchback",
+        "body": ["hatchback"],
         "price_min": 82500,
         "price_max": 72250,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Fabia_front.png",
@@ -280,7 +280,7 @@
           "speed":  "8.8"
         },
         "segment": "C",
-        "body": "suv",
+        "body": ["suv"],
         "price_min": 154800,
         "price_max": 113100,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Karoq_front.png",
@@ -304,7 +304,7 @@
           "speed":  "6.5"
         },
         "segment": "D",
-        "body": "suv",
+        "body": ["suv"],
         "price_min": 187450,
         "price_max": 156200,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Kodiaq_front.png",
@@ -328,7 +328,7 @@
           "speed":  "5.3"
         },
         "segment": "E",
-        "body": "sedan",
+        "body":["sedan"],
         "price_min": 186000,
         "price_max": 153450,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Superb_sedan_front.png",
@@ -352,7 +352,7 @@
           "speed": "7.0"
         },
         "segment": "D",
-        "body": "sedan",
+        "body":["sedan"],
         "price_min":98200,
         "price_max":177650,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Octavia_sedan_front.png",
@@ -376,7 +376,7 @@
           "speed": "9.0"
         },
         "segment":"E",
-        "body":"sedan",
+        "body":["sedan"],
         "price_min":319900,
         "price_max":334900,
         "photo_front": "https://wisg-car-database.netlify.app/toyota/Mirai_front.png",
@@ -400,7 +400,7 @@
           "speed":  "13.0"
         },
         "segment":"A",
-        "body":"suv",
+        "body":["suv"],
         "price_min":95500, 
         "price_max":104900,
         "photo_front": "https://wisg-car-database.netlify.app/suzuki/Jimmy_front.png",
@@ -424,7 +424,7 @@
           "speed":  "5,9"
         },
         "segment":"F",
-        "body":"suv",
+        "body":["suv"],
         "price_min":673100, 
         "price_max":728500,
         "photo_front": "https://wisg-car-database.netlify.app/mercedes/G_front.png",
@@ -448,7 +448,7 @@
           "speed":  "4.5"
         },
         "segment":"F",
-        "body":"sedan",
+        "body":["sedan"],
         "price_min":917300, 
         "price_max":1175600,
         "photo_front": "https://wisg-car-database.netlify.app/mercedes/S580_front.png",
@@ -472,7 +472,7 @@
           "speed":  "3.3"
         },
         "segment":"F",
-        "body":"sedan",
+        "body":["sedan"],
         "price_min":458400, 
         "price_max":617800,
         "photo_front": "https://wisg-car-database.netlify.app/audi/e-tron_front.png",
@@ -520,7 +520,7 @@
           "speed":  "8,2"
         },
         "segment": "C",
-        "body": "hatchback",
+        "body":["hatchback"],
         "price_min":73650,
         "price_max":108300,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Scala_front.png",
@@ -544,7 +544,7 @@
           "speed":  "5.3"
         },
         "segment": "E",
-        "body": "combi",
+        "body":["combi"],
         "price_min": 186000,
         "price_max": 153450,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Superb_combi_front.png",
@@ -568,7 +568,7 @@
           "speed": "7.0"
         },
         "segment": "D",
-        "body": "combi",
+        "body":["combi"],
         "price_min": 98200,
         "price_max": 177650,
         "photo_front": "https://wisg-car-database.netlify.app/skoda/Octavia_combi_front.png",
@@ -592,7 +592,7 @@
           "speed":  "9s"
         },
         "segment":"D",
-        "body":"pickup",
+        "body":["pickup"],
         "price_min":112860,
         "price_max":153494,
         "photo_front": "https://wisg-car-database.netlify.app/mitsubishi/L_200_front.png",
@@ -640,7 +640,7 @@
           "speed":  "125 km/h"
         },
         "segment":"A",
-        "body":"hatchback",
+        "body":["hatchback"],
         "price min":91400,
         "price max":98900,
         "photo front": "https://wisg-car-database.netlify.app/dacia/Spring_front.png",
@@ -713,7 +713,7 @@
           "speed":  "8.9"
         },
         "segment":"D",
-        "body":"minivan",
+        "body":["minivan"],
         "price min":127570,
         "price max":164950,
         "photo front": "https://wisg-car-database.netlify.app/vw/Touran_front.png",
@@ -737,7 +737,7 @@
           "speed":  "6.5"
         },
         "segment":"E",
-        "body":"sedan",
+        "body":["hatchback","sport"],
         "price min":122590,
         "price max":122590,
         "photo front": "https://wisg-car-database.netlify.app/vw/Polo_front.png",
@@ -747,76 +747,75 @@
       },
       {
         "id": 32,
-            "name": "ID.3",
-            "brand": "Volkswagen",
-            "engine": {
-              "type": ["electric"],
-              "hp min":204,
-              "hp max":204,
-              "unit": "km",
-              "capacity min":null,
-              "capacity max":null,
-              "max range": "l",
-              "gearbox": ["automatic"],
-              "speed":  "7.9"
-            },
-            "segment":"C",
-            "body":"hatchback",
-            "price min":191490,
-            "price max":215190,
-            "photo front": "https://wisg-car-database.netlify.app/vw/ID.3_front.png",
-            "photo side": "https://wisg-car-database.netlify.app/vw/ID.3_side.png",
-            "photos back": "https://wisg-car-database.netlify.app/vw/ID.3_back.png",
-            "logo":"https://wisg-car-database.netlify.app/logos/vw_logo.png"
-          },
-    {
-            "id": 33,
-            "name": "UP! GTI",
-            "brand": "Volkswagen",
-            "engine": {
-              "type": ["petrol"],
-              "hp min":115,
-              "hp max":115,
-              "unit": "km",
-              "capacity min":1.0 ,
-              "capacity max":1.0,
-              "max range": "196",
-              "gearbox": ["manual"],
-              "speed":  "8.8"
-            },
-            "segment":"B",
-            "body":["hatchback","sport"],
-            "price min":82990,
-            "price max":82990,
-            "photo front": "https://wisg-car-database.netlify.app/vw/Up_front.png",
-            "photo side": "https://wisg-car-database.netlify.app/vw/Up_side.png",
-            "photos back": "https://wisg-car-database.netlify.app/vw/Up_back.png",
-            "logo":"https://wisg-car-database.netlify.app/logos/vw_logo.png"
-          },
-          {
-            "id": 34,
-            "name": "UP!",
-            "brand": "Volkswagen",
-            "engine": {
-              "type": ["petrol"],
-              "hp min":65,
-              "hp max":65,
-              "unit": "km",
-              "capacity min":1.0,
-              "capacity max": 1.0,
-              "max range": "l",
-              "gearbox": ["manual"],
-              "speed":  "15.6"
-            },
-            "segment":"A",
-            "body":"hatchback",
-            "price min":588890,
-            "price max":68990,
-            "photo front": "https://wisg-car-database.netlify.app/vw/Up_front.png",
-            "photo side": "https://wisg-car-database.netlify.app/vw/Up_side.png",
-            "photos back": "https://wisg-car-database.netlify.app/vw/Up_back.png",
-            "logo":"https://wisg-car-database.netlify.app/logos/vw_logo.png"
-          }
-    
+        "name": "ID.3",
+        "brand": "Volkswagen",
+        "engine": {
+          "type": ["electric"],
+          "hp min":204,
+          "hp max":204,
+          "unit": "km",
+          "capacity min":null,
+          "capacity max":null,
+          "max range": "l",
+          "gearbox": ["automatic"],
+          "speed":  "7.9"
+        },
+        "segment":"C",
+        "body":["hatchback"],
+        "price min":191490,
+        "price max":215190,
+        "photo front": "https://wisg-car-database.netlify.app/vw/ID.3_front.png",
+        "photo side": "https://wisg-car-database.netlify.app/vw/ID.3_side.png",
+        "photos back": "https://wisg-car-database.netlify.app/vw/ID.3_back.png",
+        "logo":"https://wisg-car-database.netlify.app/logos/vw_logo.png"
+      },
+      {
+        "id": 33,
+        "name": "UP! GTI",
+        "brand": "Volkswagen",
+        "engine": {
+          "type": ["petrol"],
+          "hp min":115,
+          "hp max":115,
+          "unit": "km",
+          "capacity min":1.0 ,
+          "capacity max":1.0,
+          "max range": "196",
+          "gearbox": ["manual"],
+          "speed":  "8.8"
+        },
+        "segment":"B",
+        "body":["hatchback","sport"],
+        "price min":82990,
+        "price max":82990,
+        "photo front": "https://wisg-car-database.netlify.app/vw/Up_front.png",
+        "photo side": "https://wisg-car-database.netlify.app/vw/Up_side.png",
+        "photos back": "https://wisg-car-database.netlify.app/vw/Up_back.png",
+        "logo":"https://wisg-car-database.netlify.app/logos/vw_logo.png"
+      },
+      {
+        "id": 34,
+        "name": "UP!",
+        "brand": "Volkswagen",
+        "engine": {
+          "type": ["petrol"],
+          "hp min":65,
+          "hp max":65,
+          "unit": "km",
+          "capacity min":1.0,
+          "capacity max": 1.0,
+          "max range": "l",
+          "gearbox": ["manual"],
+          "speed":  "15.6"
+        },
+        "segment":"A",
+        "body":"[hatchback]",
+        "price min":588890,
+        "price max":68990,
+        "photo front": "https://wisg-car-database.netlify.app/vw/Up_front.png",
+        "photo side": "https://wisg-car-database.netlify.app/vw/Up_side.png",
+        "photos back": "https://wisg-car-database.netlify.app/vw/Up_back.png",
+        "logo":"https://wisg-car-database.netlify.app/logos/vw_logo.png"
+      }
     ]
 }

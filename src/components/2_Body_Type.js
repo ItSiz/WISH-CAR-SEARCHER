@@ -5,16 +5,16 @@ import "../scss/questions_scss/_2_body_type.scss";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-const BodyType = ({setCurrentComponent, handleChange, body}) => {
-    const [carBody, setCarBody] = useState(body);
+const BodyType = ({setCurrentComponent, handleChange, bodys}) => {
+    const [carBody, setCarBody] = useState(bodys);
     const toogleListElement = (body) => {
         const newBodyIndex = carBody.indexOf(body)
         if(newBodyIndex===-1) {
             setCarBody([...carBody, body])
         } else {
-            const newBody = [...carBody]
-            newBody.splice(newBodyIndex, 1)
-            setCarBody(newBody)
+            const newBodys = [...carBody]
+            newBodys.splice(newBodyIndex, 1)
+            setCarBody(newBodys)
         }
 
     }
