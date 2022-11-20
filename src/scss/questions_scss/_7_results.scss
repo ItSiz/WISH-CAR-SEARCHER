@@ -10,9 +10,9 @@
 //     background: red;
 // }
 
-.floating-exit-to-menu-button {
-    background: red;
-}
+// .floating-exit-to-menu-button {
+//     background: red;
+// }
 
 .exit-x {
     background: none;
@@ -20,8 +20,14 @@
 }
 
 .fa-exit {
+    color: $background-main-color;
+    font-size: 30px;
     background: none;
     position: fixed;
-    right: 0;
-    bottom: 0;
+    right: 20px;
+    bottom: 20px;
+    background: #ffa90096;
+    border-radius: 50%;
+    padding: 25px;
+    z-index: 10;
 }

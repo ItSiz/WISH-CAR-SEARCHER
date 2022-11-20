@@ -1,50 +1,19 @@
-// import React from 'react';
-// import App from '../App';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import "../scss/garage.scss";
-import CarOusel from './Carousel';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import Cars from '../database/car-data-base.json';
 import Carousel from 'react-bootstrap/Carousel';
-
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
  
-
-
 const Garage = ({setCurrentComponent}) => {
     const [open, setOpen] = useState(false);
-    // const body = cars.name
 
-    // fetch(`http://localhost:3000/cars/`, {
-    //     method: "POST",
-    //     body: JSON.stringify(body),
-    //     headers: {
-    //         "Content-Type": "application/json"
-    //       }
-    // })
-    //     .then(res => res.json())
-    //     .then(json => console.log(json))
-    //     .catch(err => console.error(err))
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
-    // const [cars,setCars] = useState([]);
-
-    // useEffect(()=> {
-    //     fetch("http://localhost:3000/cars")
-    //         .then(res => res.json())
-    //         .then(json => setCars(json))
-    //         .catch(err => console.error(err))
-
-    // }, []);
-
-    // const [open, setOpen] = useState(false);
-    // const moreClick = () => {
-    //     style={display: none};
-    // }
-
-        // Cars.map((cars) => (
-        //  <p className='cos'>{cars.name}</p>
-        // ))
 
     const carBrandLabel = () => {
         if (Cars.cars.brand === "Skoda") {
@@ -62,7 +31,6 @@ const Garage = ({setCurrentComponent}) => {
                 {/* {(Cars.cars).filter(car => car.id===6).map((caring) => (<div>
                     a {caring.name}
                 </div>))} */}
-
             </section>
             <section className='car-render'>
                 {(Cars.cars).map((caring) => (
@@ -139,85 +107,26 @@ const Garage = ({setCurrentComponent}) => {
                     </div>
                 ))}
             </section>
+            <section className='floating-exit-to-menu-button'>
+                <button className='exit-x' onClick={handleShow}>
+                    <i className="fa-solid fa-x fa-exit" data-bs-toggle="popover" data-bs-placement="left" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
+                </button>
 
-
-                            {/* <img className='car-front' src={carz.photo_front}/>
-                            <img className='car-side' src={carz.photo_side}/>
-                            <img className='car-back' src={carz.photo_back}/> */}
-
-                 {/* {Object.keys(Cars.cars).map((item, i) => (
-                    <li key={i}>
-                        {/* <span>Car name: {item}</span> */}
-                        {/* <span>{Cars.name}</span>
-                    </li>
-                ))} */}
-
-        {/* <p>{cars.name}</p> */}
-        {/* {cars.map((carz) => (
-            <p className='cos'>{carz.name}</p>
-        ))} */}
-        {/* <section className='menu-top'>
-                Hello
-        </section>
-        <section className='menu-todays-car'>
-            <CarOusel/>
-            <div className='parameters-box'>
-                <div className='car-title'>
-                    <div className='title-description'>
-                        <p className='car-brand'>SKODA</p>
-                        <p className='car-name'>Eniaq IV</p>
-                    </div>
-                    <i className="fa-solid fa-heart"></i>
-                </div>
-                <div className='car-data-box'>
-                    <div className='box-left'>
-                        <div className='parameters-icons'>
-                            <img className='engine-icon' src="https://cdn-icons-png.flaticon.com/512/5557/5557346.png"/>
-                            <img className='bodytype-icon' src="https://cdn-icons-png.flaticon.com/512/55/55280.png"/>
-                        </div>
-                        <div className='parameters-datas'>
-                            <span className='engine-stats statis'>58,0 kWh</span>
-                            <span className='bodytype-stats statis'>city suv</span>
-                        </div>
-                    </div>
-                    <div className='box-right'>
-                        <span className='car-prize'>200 000</span>
-                        <span>PLN *</span>
-                    </div>
-                    <button/>
-                </div>
-            </div> */}
-            {/* <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Link with href
-            </a>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Button with data-bs-target
-            </button>
-            </p>
-            <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-            </div> */}
-        {/* </section>
-
-
-        <Button
-        onClick={() => setOpen(!open)}
-        aria-controls="example-collapse-text"
-        aria-expanded={open}>
-
-        click
-      </Button>
-
-      <Collapse in={open}>
-        <div id="example-collapse-text">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident.
-        </div>
-        </Collapse> */}
+                <Modal
+                    show={show}
+                    onHide={handleClose}
+                    backdrop="static"
+                    keyboard={false}
+                    className='button-to-menu'>
+                    <Modal.Body className='modal-text'> 
+                        Do You want to cancel your dream car search and return to the MENU?
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button className='close-button' onClick={handleClose}> Close </Button>
+                        <Button className='exit-button' onClick={() => setCurrentComponent(1)}>Exit to Menu</Button>
+                    </Modal.Footer>
+                </Modal>
+            </section>
         </>
     )
 }
