@@ -110,11 +110,11 @@ const App = () => {
 
   return (
     <>
-      {/* <Loading/> */}
-      <div>
+      <Loading/>
+      {/* <div>
         <div>{filterOptions.selectedBody.join(', ')}</div>
         {componentToDisplay}
-      </div>
+      </div> */}
       {/* <Menu/> */}
       {/* <Segments/> */}
       {/* <BodyType/> */}

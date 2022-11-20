@@ -22,7 +22,7 @@ return (
                 </Spinner>
             </div>
             <div className="app-info">
-                <p>powered by Paweł Karpiński</p>
+                <p>Powered by Paweł Karpiński</p>
                 <p>V026.2022.11</p>
             </div>
 
