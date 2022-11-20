@@ -31,6 +31,8 @@
             flex-direction: column;
             margin-top: 130px;
 
+
+
             h2 {
                 font-size: 20px;
                 color: $color-primary;
@@ -46,6 +48,16 @@
                 position: relative;
                 top: 100px;
                 // margin: 5px 15px;
+
+
+                .car-photo {
+                    position: relative;
+                    top: -30;
+
+                    .carousel {
+                        top: 10px;
+                    }
+                }
 
                 img {
                     width: 200px;
@@ -69,6 +81,7 @@
                     justify-content: space-around;
                     align-items: baseline;
                     justify-content: center;
+                    margin-top: 15px;
 
                     .title-description{
                         display: flex;
