@@ -1,12 +1,9 @@
 import React, {useState} from 'react';
-// import { Link } from "react-router-dom";
 import "../scss/menu.scss";
 import CarOusel from './Carousel';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
-// import App from '../App';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import Modal from 'react-bootstrap/Modal';
 import Cars from '../database/car-data-base.json';
 
@@ -79,28 +76,6 @@ const Menu = ({setCurrentComponent}) => {
                         <span>PLN *</span>
                     </div>
                 </div>
-                {/* <div className='xd'>
-                <Collapse in={open}>
-                    <div id="more-infos">
-                        <div className='more-stats'>
-                            <div className='more-ad'><span>Gearbox</span><p>{carOfTheDay.engine.gearbox}</p></div>
-                            <div className='more-ad'><span>0/100kmh</span><p>{carOfTheDay.engine.speed}</p></div>
-                            <div className='more-ad'><span>Segment</span><p>{carOfTheDay.segment}</p></div>
-                            <div className='more-ad'><span>Body</span><p>{carOfTheDay.body}</p></div>
-                            <div className='more-ad'><span>Range</span><p>{carOfTheDay.engine.max_range}km</p></div>
-                        </div>
-                    </div>
-                </Collapse>
-                </div>
-                <div className='today-footer'>
-                        <button className='menu-more-button'
-                        onClick={() => setOpen(!open)}
-                        aria-controls="more-info"
-                        aria-expanded={open}> 
-                        More
-                        </button>
-
-                    </div> */}
             </div>
                 <Collapse in={open}>
                     <div id="more-infos">

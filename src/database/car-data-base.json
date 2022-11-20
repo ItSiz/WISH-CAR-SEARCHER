@@ -365,7 +365,7 @@
         "name": "Mirai",
         "brand": "Toyota",
         "engine": {
-          "type": ["alternative"],
+          "type": ["hydrogen"],
           "hp_min":134,
           "hp_max":134,
           "unit": "kW",

@@ -8,7 +8,6 @@ import Modal from 'react-bootstrap/Modal';
 const Budget = ({setCurrentComponent, handleChange, budget}) => {
     const [carBudget, setCarBudget] = useState(budget);
 
-
     // const [carBudgetLow, setCarBudgetLow] = useState("")
     // const [carBudgetHigh, setCarBudgetHigh] = useState("")
     window.addEventListener('value-changed', (event)=>{console.log(event)});

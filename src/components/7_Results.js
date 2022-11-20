@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-// import "../scss/questions_scss/_7_results";
 import "../scss/questions_scss/_7_results.scss";
-import CarOusel from './Carousel';
+// import CarOusel from './Carousel';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';import Collapse from 'react-bootstrap/Collapse';
-// import Cars from '../database/car-data-base.json';
 import Carousel from 'react-bootstrap/Carousel';
 
 
@@ -22,13 +20,8 @@ const Results = ({setCurrentComponent, selectedCars}) => {
         <section className='menu-top menu-segments'>
             YOUR RESULTS
         </section>
-        {/* <section className='menu-todays-car'>
-                    <div className='firstcar'>
-                        <CarOusel/>
-                    </div>
-        </section> */}
-          <section className='car-render'>
-        {selectedCars.map((caring) =>(
+        <section className='car-render'>
+            {selectedCars.map((caring) =>(
             <div className='class-render' key={caring.id}>
                         <div className='car-object'>
                             <div className='car-photos'>
@@ -100,34 +93,30 @@ const Results = ({setCurrentComponent, selectedCars}) => {
                             </div>
                         </div>    
                     </div>
+            ))}
+        </section>
+        <section className='floating-exit-to-menu-button'>
+            <button className='exit-x' onClick={handleShow}>
+                <i className="fa-solid fa-x fa-exit" data-bs-toggle="popover" data-bs-placement="left" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
+            </button>
 
-        ))}
-</section>
-            <section className='floating-exit-to-menu-button'>
-                    <button className='exit-x' onClick={handleShow}>
-                        <i className="fa-solid fa-x fa-exit" data-bs-toggle="popover" data-bs-placement="left" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
-                    </button>
-
-                    <Modal
-                        show={show}
-                        onHide={handleClose}
-                        backdrop="static"
-                        keyboard={false}
-                        className='button-to-menu'>
-                        <Modal.Body className='modal-text'> 
-                            Do You want to cancel your dream car search and return to the MENU?
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button className='close-button' onClick={handleClose}> Close </Button>
-                            <Button className='exit-button' onClick={() => setCurrentComponent(1)}>Exit to Menu</Button>
-                        </Modal.Footer>
-                    </Modal>
-            </section>
-        
+            <Modal
+                show={show}
+                onHide={handleClose}
+                backdrop="static"
+                keyboard={false}
+                className='button-to-menu'>
+                <Modal.Body className='modal-text'> 
+                    Do You want to cancel your dream car search and return to the MENU?
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className='close-button' onClick={handleClose}> Close </Button>
+                    <Button className='exit-button' onClick={() => setCurrentComponent(1)}>Exit to Menu</Button>
+                </Modal.Footer>
+            </Modal>
+        </section>
         {/* <i className="fa-solid fa-x" data-bs-toggle="popover" title="Exit to Menu" data-bs-content="And here's some amazing content. It's very engaging. Right?" 
         style={{"top": "200px", "position": "fixed"}}> </i> */}
-        
-        
         </>
     )
 }

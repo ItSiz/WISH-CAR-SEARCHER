@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-// import React, { useState, useEffect, Fragment } from 'react';
 import "../scss/questions_scss/_3_fuel.scss";
-// import ProgressBar from './Progress_bar';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 

@@ -1,46 +1,7 @@
-// import { Button } from 'bootstrap';
 import React, { useState } from 'react';
 import "../scss/questions_scss/_5_gearbox.scss";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-
-// import ProgressBar from './Progress_bar';
-
-// const DataCatcher = () => {
-//     const [gearboxinfo, setGearboxInfo] = useState({gearbox: []});
-
-//     const handleChange = (e) => {
-//         const {value, checked } = e.target;
-//         const {gearbox} = gearboxinfo;
-
-//         console.log(`${value} is ${checked}`);
-
-//         if (checked) {
-//             setGearboxInfo({
-//                 gearbox: [...gearbox, value],
-//                 response: [...gearbox, value],
-//             });
-//         } else {
-//             setGearboxInfo({
-//                 gearbox: gearbox.filter((e)=> e !== value),
-//                 response: gearbox.filter((e)=> e !== value),
-//             })
-//         }
-//     }
-// }
-
-// const button = document.querySelector('input');
-// const fieldset = document.querySelector('fieldset');
-
-// button.addEventListener('click', disableButton);
-
-// function disableButton() {
-//   fieldset.disabled = true;
-//   setTimeout(() => {
-//     fieldset.disabled = false;
-//   }, 2000);
-// }
-
 
 const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
     const [carGearbox, setCarGearbox] = useState("");
@@ -48,14 +9,6 @@ const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    // const button = document.getElementsByClassName('gearbox-questions');
-
-    // button.addEventListener("click", klik);
-
-    // const klik = () => {
-    //     console.log("jej")
-    // }
 
     return (
         <>
@@ -82,8 +35,6 @@ const Gearbox = ({setCurrentComponent}, {handleChange} ) => {
                             <p>any type</p>
                         </div>
                     </button>
-
-
             </section>
 
             <section className='questions-bottom'>

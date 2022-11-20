@@ -1,10 +1,6 @@
 import React, { useState} from 'react';
 import "../scss/questions_scss/_4_power.scss";
-// import ProgressBar from './Progress_bar';
 import { round } from "@thomasloven/round-slider";
-// import Logo from '../../assets/Logo_car.png';
-// import Logo from '.../assets/Logo_car.png';
-// import favicon from '../../public/favicon.ico';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
@@ -40,7 +36,6 @@ const Power = ({setCurrentComponent}) => {
                         "--round-slider-handle-color" : "#242323",
                         "--round-slider-path-color": "#737373",}}
                     // onChange={(low)=>setLow(low)}
-
                     />
 
                 <div className='slider-center'>
@@ -53,10 +48,10 @@ const Power = ({setCurrentComponent}) => {
                         <p>min</p>
                         <div className='counter-box'>
                             <p className='km-value'>
-                                {low} km
+                                {low} 100 km
                             </p>
                             <p className='kWh-value'>
-                                {low} kWh
+                                {low} 74 kWh
                             </p>
                         </div>
                     </div>
@@ -64,10 +59,10 @@ const Power = ({setCurrentComponent}) => {
                         <p>max</p>
                         <div className='counter-box'>
                             <p className='km-value'>
-                                {high} km
+                                {high} 220 km
                             </p>
                             <p className='kWh-value'>
-                                {high} kWh
+                                {high} 163 kW
                             </p>
                         </div>
                     </div>
