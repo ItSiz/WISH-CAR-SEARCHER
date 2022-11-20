@@ -5,8 +5,24 @@ import "../scss/questions_scss/_2_body_type.scss";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-const BodyType = ({setCurrentComponent}) => {
-    const [carBody, setCarBody] = useState("");
+const BodyType = ({setCurrentComponent, handleChange, body}) => {
+    const [carBody, setCarBody] = useState(body);
+    const toogleListElement = (body) => {
+        const newBodyIndex = carBody.indexOf(body)
+        if(newBodyIndex===-1) {
+            setCarBody([...carBody, body])
+        } else {
+            const newBody = [...carBody]
+            newBody.splice(newBodyIndex, 1)
+            setCarBody(newBody)
+        }
+
+    }
+    console.log(carBody)
+    const onNextClick = () => {
+        handleChange(carBody)
+        setCurrentComponent(4)
+    }
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -20,51 +36,51 @@ const BodyType = ({setCurrentComponent}) => {
 
             <section className='questions-body bodytype-body'>
                 <div className='body-question-row'>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("hatchback")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("hatchback")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55198.png' alt='hatchback-icon'/>
                         <p>hatchback</p>
                     </button>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("sedan")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("sedan")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55283.png' alt='sedan-icon'/>
                         <p>sedan</p>
                     </button>
                 </div>
                 <div className='body-question-row'>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("combi")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("combi")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55183.png' alt='combi-icon'/>
                         <p>combi</p>
                     </button>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("coupe")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("coupe")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55180.png' alt='coupe-icon'/>
                         <p>coupe</p>
                     </button>
                 </div>
                 <div className='body-question-row'>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("cabrio")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("cabrio")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55195.png' alt='cabrio-icon'/>
                         <p>cabrio</p>
                     </button>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("sport")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("sport")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55168.png' alt='sport-icon'/>
                         <p>sport</p>
                     </button>
                 </div>
                 <div className='body-question-row'>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("minivan")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("minivan")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55349.png' alt='minivan-icon'/>
                         <p>minivan</p>
                     </button>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("suv")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("suv")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55280.png' alt='suv-icon'/>
                         <p>suv</p>
                     </button>
                 </div>
                 <div className='body-question-row'>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("off-road")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("off-road")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55230.png' alt='off-road-icon'/>
                         <p>off-road</p>
                     </button>
-                    <button className='body-questions class-hatchback' onClick={() => setCarBody("pickup")}>
+                    <button className='body-questions class-hatchback' onClick={() => toogleListElement("pickup")}>
                         <img src='https://cdn-icons-png.flaticon.com/512/55/55277.png' alt='pickup-icon'/>
                         <p>pickup</p>
                     </button>
@@ -77,7 +93,7 @@ const BodyType = ({setCurrentComponent}) => {
                     <button className='next-icon' onClick={() => setCurrentComponent(2)}>
                         <i className="fa-solid fa-arrow-left" data-bs-toggle="popover" title="Previous page" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                     </button>
-                    <button className='next-buton' onClick={() => setCurrentComponent(4)}>
+                    <button className='next-buton' onClick={() => onNextClick()}>
                         next
                     </button>
                     <button className='next-icon' onClick={handleShow}>

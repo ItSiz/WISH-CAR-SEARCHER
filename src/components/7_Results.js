@@ -6,11 +6,13 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 
-const Results = ({setCurrentComponent}) => {
+const Results = ({setCurrentComponent, selectedCars}) => {
     
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    console.log(selectedCars)
 
     return (
         <>
@@ -24,7 +26,13 @@ const Results = ({setCurrentComponent}) => {
         </section> */}
         <section className='questions-body'>
         </section>
+        {selectedCars.map((caring) =>(
+            <div className='selected-car' key={caring.id}>
+                <p>{caring.brand}{caring.name}</p>
+                <img src={caring.photo_front}/>
+            </div>
 
+        ))}
 
             <section className='floating-exit-to-menu-button'>
                     <button className='exit-x' onClick={handleShow}>

@@ -5,17 +5,22 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 
-const Budget = ({setCurrentComponent}) => {
-    // const [carSegment, setCarSegment] = useState(segments);
+const Budget = ({setCurrentComponent, handleChange, budget}) => {
+    const [carBudget, setCarBudget] = useState(budget);
 
 
-    const [carBudgetLow, setCarBudgetLow] = useState("")
-    const [carBudgetHigh, setCarBudgetHigh] = useState("")
+    // const [carBudgetLow, setCarBudgetLow] = useState("")
+    // const [carBudgetHigh, setCarBudgetHigh] = useState("")
     window.addEventListener('value-changed', (event)=>{console.log(event)});
  
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const onNextClick = () => {
+        handleChange(carBudget)
+        setCurrentComponent(8)
+    }
 
     return (
     <>
@@ -77,7 +82,7 @@ const Budget = ({setCurrentComponent}) => {
                     <button className='next-icon' onClick={() => setCurrentComponent(6)}>
                         <i className="fa-solid fa-arrow-left" data-bs-toggle="popover" title="Previous page" data-bs-content="And here's some amazing content. It's very engaging. Right?"></i>
                     </button>
-                    <button className='next-buton' onClick={() => setCurrentComponent(8)}>
+                    <button className='next-buton' onClick={() => onNextClick()}>
                         next
                     </button>
                     <button className='next-icon' onClick={handleShow}>

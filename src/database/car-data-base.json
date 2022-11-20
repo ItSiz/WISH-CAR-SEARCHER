@@ -8,7 +8,7 @@
           "type": "electric",
           "hp_min": 58,
           "hp_max": 77,
-          "unit": "kWh",
+          "unit": "kW",
           "capacity_min": null,
           "capacity_max": null,
           "max_range": 541,
@@ -32,7 +32,7 @@
           "type": "electric",
           "hp_min": 77,
           "hp_max": 77,
-          "unit": "kWh",
+          "unit": "kW",
           "capacity_min": null,
           "capacity_max": null,
           "max_range": 522,
@@ -152,7 +152,7 @@
           "type": ["electric"],
           "hp_min":240,
           "hp_max":455,
-          "unit": "kWh",
+          "unit": "kW",
           "capacity_min": null,
           "capacity_max": null ,
           "max_range":561, 
@@ -368,7 +368,7 @@
           "type": ["alternative"],
           "hp_min":134,
           "hp_max":134,
-          "unit": "kWh",
+          "unit": "kW",
           "capacity_min": null,
           "capacity_max": null,
           "max_range":650,
@@ -464,7 +464,7 @@
           "type": ["electric"],
           "hp_min":350,
           "hp_max":350,
-          "unit": "kWh",
+          "unit": "kW",
           "capacity_min": null,
           "capacity_max": null ,
           "max_range":441,
@@ -482,7 +482,7 @@
       },
       {
         "id": 21,
-        "name": "R8 Spyder V10 performance",
+        "name": "R8 Spyder V10",
         "brand": "Audi",
         "engine": {
           "type": ["petrol"],
@@ -623,7 +623,128 @@
         "photo_side": "https://wisg-car-database.netlify.app/mitsubishi/L_200_stark_side.png",
         "photo_back": "https://wisg-car-database.netlify.app/mitsubishi/L_200_stark_back.png",
         "logo": "https://wisg-car-database.netlify.app/logos/mitsubishi_logo.png"
-      }
+      },
+      {
+        "id": 27,
+        "name": "SPRING",
+        "brand": "DACIA",
+        "engine": {
+          "type": ["electric"],
+          "hp min":45,
+          "hp max":45,
+          "unit": "km",
+          "capacity min":null ,
+          "capacity max":null  ,
+          "max range": "230",
+          "gearbox": ["automatic" ],
+          "speed":  "125 km/h"
+        },
+        "segment":"E",
+        "body":"sedan",
+        "price min":91400,
+        "price max":98900,
+        "photo front": "",
+        "photo side": "",
+        "photos back": "",
+        "logo":""
 
+      },
+      {
+        "id": 28,
+        "name": "911 CARRERA",
+        "brand": "PORSCHE",
+        "engine": {
+          "type": ["petrol"],
+          "hp min":385,
+          "hp max":385,
+          "unit": "km",
+          "capacity min":3.0,
+          "capacity max":3.0,
+          "max range": "727",
+          "gearbox": ["automatic"],
+          "speed":  "4.2"
+        },
+        "segment":"E",
+        "body":"sedan",
+        "price min":564000,
+        "price max":616000,
+        "photo front": "",
+        "photo side": "",
+        "photos back": "",
+        "logo":""
+      },
+      {
+        "id": 29,
+        "name": "Taycan Grand Tourer",
+        "brand": "Porsche",
+        "engine": {
+          "type": ["electric"],
+          "hp min":761,
+          "hp max":761,
+          "unit": "km",
+          "capacity min":null,
+          "capacity max":null,
+          "max range": "l",
+          "gearbox": ["automatic"],
+          "speed":  "2.8"
+        },
+        "segment":"E",
+        "body":"sedan",
+        "price min":407000,
+        "price max":817000,
+        "photo front": "",
+        "photo side": "",
+        "photos back": "",
+        "logo":""
+      },
+      {
+        "id": 30,
+        "name": "Tourer",
+        "brand": "Volkswagen",
+        "engine": {
+          "type": ["diesel", "petrol"],
+          "hp min":150,
+          "hp max":150,
+          "unit": "km",
+          "capacity min":1.5,
+          "capacity max":2.0  ,
+          "max range": "l",
+          "gearbox": ["manual", "automatic"],
+          "speed":  "8.9"
+        },
+        "segment":"E",
+        "body":"sedan",
+        "price min":127570,
+        "price max":164950,
+        "photo front": "",
+        "photo side": "",
+        "photos back": "",
+        "logo":""
+      },
+      {
+        "id": 31,
+        "name": "Polo VI GTI",
+        "brand": "Volkswagen",
+        "engine": {
+          "type": ["petrol"],
+          "hp min":207,
+          "hp max":207,
+          "unit": "km",
+          "capacity min":2.0 ,
+          "capacity max": 2.0 ,
+          "max range": "597",
+          "gearbox": ["automatic"],
+          "speed":  "6.5"
+        },
+        "segment":"E",
+        "body":"sedan",
+        "price min":122590,
+        "price max":122590,
+        "photo front": "",
+        "photo side": "",
+        "photos back": "",
+        "logo":""
+
+      }
     ]
 }

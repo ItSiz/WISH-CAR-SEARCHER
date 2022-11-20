@@ -8,16 +8,27 @@ $transition-collapse: height .35s ease;
     font-family: $font-Righteous;
 }
 
-.menu-top {
+.menus-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-dark;
+    background-image: url(../../public/icons/wish_backg.png);
+    font-size: 40px;
+    z-index: 5;
+}
+
+.menu-top{
     display:flex;
     justify-content: center;
     align-items: center;
     height: 90px;
     color: $text-dark;
-                // background: $color-primary;
     background-image: url(../../public/icons/wish_backg.png);
     font-family: $font-Righteous;
     font-size: 25px;
+
+
 }
 
 .menu-todays-car {
@@ -27,6 +38,7 @@ $transition-collapse: height .35s ease;
     box-shadow: 0px 0px 20px -10px rgba(36, 35, 35, 1);
     position: relative;
     top: -20px;
+    z-index: 1;
 
     .car-presentation {
         .brand-logo {
@@ -78,7 +90,7 @@ $transition-collapse: height .35s ease;
             .title-description {
                 display: flex;
                 background: none;
-                font-size: 26px;
+                font-size: 22px;
                 height: 40px;
                 margin-top: 5px;
 
@@ -100,9 +112,8 @@ $transition-collapse: height .35s ease;
                 background: none;
                 display: flex;
                 align-items: center;
-                left: 35px;
-                position: relative;
                 font-size: 20px;
+                margin-left: 10px;
 
                 &:hover {
                     color: $color-primary;
@@ -136,16 +147,21 @@ $transition-collapse: height .35s ease;
                     display: flex;
                     flex-direction: column;
                     margin-right: 10px;
+
+                    img {
+                        margin-bottom: 0;
+                    }
                 
                     .engine-icon {
                         background: none;
-                        width: 34px;
-                        height: 34px;
+                        width: 24px;
+                        height: 24px;
+                        margin-bottom: 5px;
                         color: $background-main-color;
                     }
                     .bodytype-icon {
-                        width: 34px;
-                        height: 34px;
+                        width: 24px;
+                        height: 24px;
                         background: none;
                     }
                 }
@@ -158,7 +174,7 @@ $transition-collapse: height .35s ease;
                         background: none;
                         color: $background-main-color;
                     }
-            }
+                }
             }
             .box-right {
                 display: flex;
@@ -173,8 +189,18 @@ $transition-collapse: height .35s ease;
                 }
 
                 .car-prize {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    margin: 0;
                     font-size: 24px;
                     color: $color-primary;
+
+                    p {
+                        font-size: 12px;
+                        color: $color-primary;
+                        margin: 0 2px 0 0;
+                    }
                 }
 
                 & span:last-child {
@@ -182,10 +208,88 @@ $transition-collapse: height .35s ease;
                     color: $color-primary;
                 }
             }
+
+            
         }
+        .more-infos {
+            background: $text-full-light;
+            display: flex;
+            border-radius: 10px;
+            margin-top: -10px;
+        }
+            .more-stats {
+                background: $text-full-light;
+                padding: 10px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                
+                .more-ad {
+                    color: $text-dark;
+                    display: flex;
+                    align-items: center;
+                    margin: -8px 5px;
+                    align-items: baseline;
+                    span {
+                        color: $text-dark;
+                        margin: 0 15px 0 45px
+                    }
+                    // &:first-of-type {
+                    //     margin-left: 0;
+                    // }
+                    // &:last-of-type {
+                    //     margin-right: 0;
+                    // }
+                    p {
+                        color: $color-secondary;
+                        font-size: 14px;
+                    }
+                }
+
+            }
 
 
 }
+
+.more-infos {
+    background: $text-full-light;
+    display: flex;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+    .more-stats {
+        background: $text-full-light;
+        padding: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        
+        .more-ad {
+            color: $text-dark;
+            display: flex;
+            align-items: center;
+            margin: -8px 5px;
+            align-items: baseline;
+            span {
+                color: $text-dark;
+                margin: 0 15px 0 45px
+            }
+            // &:first-of-type {
+            //     margin-left: 0;
+            // }
+            // &:last-of-type {
+            //     margin-right: 0;
+            // }
+            p {
+                color: $color-secondary;
+                font-size: 14px;
+            }
+        }
+
+    }
+
 
 // WHY NIE W .menu-todays-car???
 
@@ -193,7 +297,7 @@ $transition-collapse: height .35s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -124px;
+    // margin-top: -124px;
 
 
 

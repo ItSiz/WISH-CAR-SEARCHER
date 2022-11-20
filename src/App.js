@@ -17,13 +17,18 @@ import Cars from './database/car-data-base.json';
 const App = () => {
   const [filterOptions, setFilterOptions] = useState({
     selectedSegments: [],
-    gearbox: ''
+    selectedBody: [],
   })
   const [currentComponent, setCurrentComponent] = useState(0);
   const [componentToDisplay, setComponentToDisplay] = useState(<Loading setCurrentComponent={setCurrentComponent} />);
+  const [selectedCars, setSelectedCars] = useState([])
 
   const setSelectedSegments = (selectedSegments) => {
     setFilterOptions({...filterOptions, ...{selectedSegments}})
+  }
+  const setSelectedBody = (selectedBody) => {
+    console.log(selectedBody)
+    setFilterOptions({...filterOptions, ...{selectedBody}})
   }
 
   const getFilteredCars = () => {
@@ -34,6 +39,12 @@ const App = () => {
     })
     return filteredCards
   }
+
+  const onSelectedFiltersCompleted = async (seletedBudget) => {
+    await setFilterOptions({...filterOptions, ...{seletedBudget}})
+    setSelectedCars(getFilteredCars())
+  }
+ 
 
   // const timer1 = setTimeout(() => {setCurrentComponent(1);}, 1000);
 
@@ -69,7 +80,7 @@ const App = () => {
       setComponentToDisplay(<Segments setCurrentComponent={setCurrentComponent} segments={filterOptions.selectedSegments} handleChange={setSelectedSegments}/>);
     } 
     else if (currentComponent === 3) {
-      setComponentToDisplay(<BodyType setCurrentComponent={setCurrentComponent}/>);
+      setComponentToDisplay(<BodyType setCurrentComponent={setCurrentComponent} body={filterOptions.selectedBody} handleChange={setSelectedBody}/>);
     }
     else if (currentComponent === 4) {
       setComponentToDisplay(<Fuel setCurrentComponent={setCurrentComponent}/>);
@@ -81,14 +92,14 @@ const App = () => {
       setComponentToDisplay(<Gearbox setCurrentComponent={setCurrentComponent}/>);
     }
     else if (currentComponent === 7) {
-      setComponentToDisplay(<Budget setCurrentComponent={setCurrentComponent}/>);
+      setComponentToDisplay(<Budget setCurrentComponent={setCurrentComponent}  budget={filterOptions.selectedBudget} handleChange={onSelectedFiltersCompleted} />);
     }
     else if (currentComponent === 8) {
       setComponentToDisplay(<Loading setCurrentComponent={setCurrentComponent}/>);
       setTimeout(() => {setCurrentComponent(9);}, 2000);
     }
     else if (currentComponent === 9) {
-      setComponentToDisplay(<Results getFilteredCars setCurrentComponent={setCurrentComponent}/>);
+      setComponentToDisplay(<Results setCurrentComponent={setCurrentComponent} selectedCars={selectedCars}/>);
       
     }
     else if (currentComponent === 10) {
@@ -100,10 +111,10 @@ const App = () => {
   return (
     <>
       {/* <Loading/> */}
-      {/* <div>
-        <div>{filterOptions.selectedSegments}</div>
+      <div>
+        <div>{filterOptions.selectedBody.join(', ')}</div>
         {componentToDisplay}
-      </div> */}
+      </div>
       {/* <Menu/> */}
       {/* <Segments/> */}
       {/* <BodyType/> */}
@@ -113,7 +124,7 @@ const App = () => {
       {/* <Budget/> */}
       {/* <Results/> */}
       {/* <RoundSlider/> */}
-      <Garage/>
+      {/* <Garage/> */}
       </>
 
   )

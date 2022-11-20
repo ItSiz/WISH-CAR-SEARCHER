@@ -37,7 +37,7 @@ const Menu = ({setCurrentComponent}) => {
     
     return (
     <>
-        <section className='garage-top'>
+        <section className='menus-up'>
             Hello {Username()}
         </section>
 
@@ -48,23 +48,28 @@ const Menu = ({setCurrentComponent}) => {
                     {/* <CarOusel/> */}
                 {/* </div> */}
             {/* </div> */}
-                <Carousel>
-                    <Carousel.Item>
-                        <img className="d-block w-100 car-front"
-                        src={carOfTheDay.photo_front}
-                        alt="Front view"/>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="d-block w-100 car-side"
-                        src={carOfTheDay.photo_side}
-                        alt="Side view"/>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="d-block w-100 car-back"
-                        src={carOfTheDay.photo_back}
-                        alt="Back view"/>
-                    </Carousel.Item>
-                </Carousel>
+            <div className='car-photos menu-car'>
+                <img className='brand-logo' src={carOfTheDay.logo}/>
+                <div className='car-photo'>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img className="d-block w-100 car-front"
+                            src={carOfTheDay.photo_front}
+                            alt="Front view"/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="d-block w-100 car-side"
+                            src={carOfTheDay.photo_side}
+                            alt="Side view"/>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img className="d-block w-100 car-back"
+                            src={carOfTheDay.photo_back}
+                            alt="Back view"/>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+            </div>
             <div className='parameters-box'>
                 <div className='car-title'>
                     <div className='title-description'>
@@ -85,40 +90,55 @@ const Menu = ({setCurrentComponent}) => {
                         </div>
                     </div>
                     <div className='box-right'>
-                        <span className='car-prize'>200 000</span>
+                        <span className='car-prize'><p>from</p>{carOfTheDay.price_min}</span>
                         <span>PLN *</span>
                     </div>
-
                 </div>
+                {/* <Collapse in={open}>
+                    <div id="more-infos">
+                        <div className='more-stats'>
+                            <div className='more-ad'><span>Gearbox</span><p>{carOfTheDay.engine.gearbox}</p></div>
+                            <div className='more-ad'><span>0/100kmh</span><p>{carOfTheDay.engine.speed}</p></div>
+                            <div className='more-ad'><span>Segment</span><p>{carOfTheDay.segment}</p></div>
+                            <div className='more-ad'><span>Body</span><p>{carOfTheDay.body}</p></div>
+                            <div className='more-ad'><span>Range</span><p>{carOfTheDay.engine.max_range}km</p></div>
+                        </div>
+                    </div>
+                </Collapse> */}
+                {/* <div className='today-footer'>
+                    <button className='menu-more-button'
+                    onClick={() => setOpen(!open)}
+                    aria-controls="more-info"
+                    aria-expanded={open}> 
+                    More
+                    </button>
+
+                </div> */}
+
             </div>
-
-
+            <Collapse in={open}>
+                    <div id="more-infos">
+                        <div className='more-stats'>
+                            <div className='more-ad'><span>Gearbox</span><p>{carOfTheDay.engine.gearbox}</p></div>
+                            <div className='more-ad'><span>0/100kmh</span><p>{carOfTheDay.engine.speed}</p></div>
+                            <div className='more-ad'><span>Segment</span><p>{carOfTheDay.segment}</p></div>
+                            <div className='more-ad'><span>Body</span><p>{carOfTheDay.body}</p></div>
+                            <div className='more-ad'><span>Range</span><p>{carOfTheDay.engine.max_range}km</p></div>
+                        </div>
+                    </div>
+                </Collapse>
             <div className='today-footer'>
                 <button className='menu-more-button'
                   onClick={() => setOpen(!open)}
                   aria-controls="more-info"
-                  aria-expanded={open}> More</button>
-                <Collapse in={open}>
-                    <div id="more-info">
-                        {/* {(Cars.cars).map((caring, i) => (
-                            <div className='class-render' key={i}>
-                                <h2 className='car-brand'> {caring.brand}</h2>
-                                <h3 className='car-name'> {caring.name}</h3>
-                            </div>
-                        ))} */}
-                        {/* {(Cars.cars).map((i) => ( */}
-                            <div className='class-render'>
-                                xxdd
-                                xddx
-                                {/* <h3 className='car-brand'> {randomCar.brand}</h3>
-                                <h3 className='car-name'> {randomCar.name}</h3> */}
-                            </div>
-                        {/* ))} */}
-                    </div>
-                </Collapse>
-                        <p>The car of the Day</p>
-                    </div>
-                </section>
+                  aria-expanded={open}> 
+                  More
+                </button>
+ 
+            </div>
+            <p>The car of the Day</p>
+                        {/* <p>The car of the Day</p> */}
+        </section>
 
         <section className='menu-nav'>
             <button className='whishlist-button nav-button'>

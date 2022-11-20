@@ -9,7 +9,9 @@ import Collapse from 'react-bootstrap/Collapse';
 import Cars from '../database/car-data-base.json';
 import Carousel from 'react-bootstrap/Carousel';
 
-// const API = "http://localhost:3000";
+
+
+const API = "http://localhost:3000";
  
 
 
@@ -63,6 +65,7 @@ const Garage = ({setCurrentComponent}) => {
                 {/* {(Cars.cars).filter(car => car.id===6).map((caring) => (<div>
                     a {caring.name}
                 </div>))} */}
+
             </section>
             <section className='car-render'>
                 {(Cars.cars).map((caring) => (
@@ -111,7 +114,7 @@ const Garage = ({setCurrentComponent}) => {
                                         </div>
                                     </div>
                                     <div className='box-right'>
-                                        <span className='car-prize'>{caring.price_min}</span>
+                                        <span className='car-prize'><p>from</p>{caring.price_min}</span>
                                         <span>PLN *</span>
                                     </div>
                                 </div>
@@ -133,20 +136,17 @@ const Garage = ({setCurrentComponent}) => {
                                     aria-controls="more-info"
                                     aria-expanded={open}> 
                                     More
-                                </button>
-                                
+                                </button>      
                             </div>
                         </div>    
-                            {/* <img className='car-front' src={carz.photo_front}/>
-                            <img className='car-side' src={carz.photo_side}/>
-                            <img className='car-back' src={carz.photo_back}/> */}
                     </div>
                 ))}
-                
             </section>
 
 
-
+                            {/* <img className='car-front' src={carz.photo_front}/>
+                            <img className='car-side' src={carz.photo_side}/>
+                            <img className='car-back' src={carz.photo_back}/> */}
 
                  {/* {Object.keys(Cars.cars).map((item, i) => (
                     <li key={i}>

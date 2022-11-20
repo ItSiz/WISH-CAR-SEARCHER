@@ -12,6 +12,7 @@
     color: $text-dark;
     background-image: url(../../public/icons/wish_backg.png);
     font-size: 40px;
+    z-index: 5;
 }
 
 .car-render {
@@ -86,8 +87,12 @@
                     .fa-heart {
                         font-size: 21px;
                         color: $background-main-color;
+                        z-index: 5;
                         
                         &:hover{
+                            color: $color-primary;
+                        }
+                        &:active {
                             color: $color-primary;
                         }
                     }
@@ -110,6 +115,7 @@
                             .para-ico {
                                 width: 20px;
                                 height: 20px;
+                                margin-bottom: 7px;
                             }
                         }
                         .parameters-datas {
@@ -127,7 +133,16 @@
                         align-items: center;
 
                         .car-prize{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: baseline;
+                            margin: 0;
                             font-size: 23px;
+                        }
+                        p {
+                            font-size: 12px;
+                            color: $color-primary;
+                            margin: 0 2px 0 0;
                         }
                         span {
                             color: $color-secondary;
